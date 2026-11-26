@@ -236,7 +236,7 @@
     }
   }
 
-  function playTone(freq, duration, type = 'sine', volume = 0.12, delay = 0) { // +50% (Cơ 24/11 20:49).
+  function playTone(freq, duration, type = 'sine', volume = 0.24, delay = 0) { // x2 (Cơ 27/11 ~01:58: tiếng lớn gấp đôi; gốc +50% 24/11).
     const ctx = ensureAudioCtx();
     if (!ctx) return;
     try {
@@ -258,23 +258,23 @@
   }
 
   function playCorrectSfx() {
-    playTone(587.33, 0.14, 'triangle', 0.18, 0);
-    playTone(880.0, 0.24, 'triangle', 0.21, 0.1);
+    playTone(587.33, 0.14, 'triangle', 0.36, 0);
+    playTone(880.0, 0.24, 'triangle', 0.42, 0.1);
   }
 
   function playRevealSfx() {
-    playTone(523.25, 0.14, 'triangle', 0.15, 0);
-    playTone(659.25, 0.14, 'triangle', 0.15, 0.09);
-    playTone(783.99, 0.16, 'triangle', 0.165, 0.18);
-    playTone(1046.5, 0.34, 'triangle', 0.195, 0.27);
+    playTone(523.25, 0.14, 'triangle', 0.3, 0);
+    playTone(659.25, 0.14, 'triangle', 0.3, 0.09);
+    playTone(783.99, 0.16, 'triangle', 0.33, 0.18);
+    playTone(1046.5, 0.34, 'triangle', 0.39, 0.27);
   }
 
   function playTickSfx() {
-    playTone(720, 0.06, 'sine', 0.075, 0);
+    playTone(720, 0.06, 'sine', 0.15, 0);
   }
 
   // Trượt tần số (boing / rơi) — dùng cho trò trêu cô giáo.
-  function playSlide(freqFrom, freqTo, duration, type = 'sine', volume = 0.12, delay = 0) {
+  function playSlide(freqFrom, freqTo, duration, type = 'sine', volume = 0.24, delay = 0) { // x2 (Cơ 27/11 ~01:58).
     const ctx = ensureAudioCtx();
     if (!ctx) return;
     try {
@@ -301,8 +301,8 @@
     const now = Date.now();
     if (now - (state.lastWrongSfxAt || 0) < 2000) return;
     state.lastWrongSfxAt = now;
-    playTone(233.08, 0.18, 'sawtooth', 0.07, 0);
-    playTone(174.61, 0.26, 'sawtooth', 0.07, 0.12);
+    playTone(233.08, 0.18, 'sawtooth', 0.14, 0);
+    playTone(174.61, 0.26, 'sawtooth', 0.14, 0.12);
   }
 
   // Quà tới: chuông 3 nốt; quà lớn thêm nốt cao (chống spam 1,5s với quà nhỏ).
@@ -310,13 +310,13 @@
     const now = Date.now();
     if (coins < 10 && now - (state.lastGiftSfxAt || 0) < 1500) return;
     state.lastGiftSfxAt = now;
-    playTone(523.25, 0.12, 'triangle', 0.16, 0);
-    playTone(659.25, 0.12, 'triangle', 0.16, 0.07);
-    playTone(783.99, 0.2, 'triangle', 0.18, 0.14);
-    if (coins >= 10) playTone(1046.5, 0.3, 'triangle', 0.18, 0.21);
+    playTone(523.25, 0.12, 'triangle', 0.32, 0);
+    playTone(659.25, 0.12, 'triangle', 0.32, 0.07);
+    playTone(783.99, 0.2, 'triangle', 0.36, 0.14);
+    if (coins >= 10) playTone(1046.5, 0.3, 'triangle', 0.36, 0.21);
     if (coins >= 20) {
-      playTone(1318.5, 0.3, 'triangle', 0.16, 0.3);
-      playTone(1567.98, 0.35, 'triangle', 0.15, 0.38);
+      playTone(1318.5, 0.3, 'triangle', 0.32, 0.3);
+      playTone(1567.98, 0.35, 'triangle', 0.3, 0.38);
     }
   }
 
@@ -326,31 +326,31 @@
   // gộp cả bộ. Tiếng la "Á!" nằm trong câu cảm ơn của MC (cùng 1 lần đọc).
   function playTeaseSfx(tierMin) {
     if (tierMin >= 20) {
-      playTone(1400, 0.05, 'sine', 0.12, 0);
-      playTone(1650, 0.05, 'sine', 0.12, 0.07);
-      playTone(1400, 0.05, 'sine', 0.12, 0.14);
-      playSlide(700, 220, 0.28, 'sine', 0.12, 0.05);
-      playSlide(300, 750, 0.22, 'sine', 0.12, 0.15);
-      playTone(160, 0.3, 'triangle', 0.12, 0.2);
+      playTone(1400, 0.05, 'sine', 0.24, 0);
+      playTone(1650, 0.05, 'sine', 0.24, 0.07);
+      playTone(1400, 0.05, 'sine', 0.24, 0.14);
+      playSlide(700, 220, 0.28, 'sine', 0.24, 0.05);
+      playSlide(300, 750, 0.22, 'sine', 0.24, 0.15);
+      playTone(160, 0.3, 'triangle', 0.24, 0.2);
       // Nhịp thục dầu: 5 tiếng thump theo nhịp chống đẩy (bắt đầu sau cú nhảy)
-      [1.4, 2.2, 3.0, 3.8, 4.6].forEach((d) => playTone(90, 0.12, 'sine', 0.14, d));
+      [1.4, 2.2, 3.0, 3.8, 4.6].forEach((d) => playTone(90, 0.12, 'sine', 0.28, d));
     } else if (tierMin >= 10) {
-      playTone(160, 0.3, 'triangle', 0.12, 0);
-      playSlide(420, 150, 0.3, 'sine', 0.1, 0.05);
+      playTone(160, 0.3, 'triangle', 0.24, 0);
+      playSlide(420, 150, 0.3, 'sine', 0.2, 0.05);
       // Nhịp thục dầu: 5 tiếng thump theo nhịp chống đẩy
-      [0.5, 1.35, 2.25, 3.15, 4.0].forEach((d) => playTone(90, 0.12, 'sine', 0.14, d));
+      [0.5, 1.35, 2.25, 3.15, 4.0].forEach((d) => playTone(90, 0.12, 'sine', 0.28, d));
     } else if (tierMin >= 2) {
-      playTone(1400, 0.05, 'sine', 0.12, 0);
-      playTone(1650, 0.05, 'sine', 0.12, 0.07);
-      playTone(1400, 0.05, 'sine', 0.12, 0.14);
-      playSlide(300, 750, 0.22, 'sine', 0.12, 0.05);
+      playTone(1400, 0.05, 'sine', 0.24, 0);
+      playTone(1650, 0.05, 'sine', 0.24, 0.07);
+      playTone(1400, 0.05, 'sine', 0.24, 0.14);
+      playSlide(300, 750, 0.22, 'sine', 0.24, 0.05);
     } else {
-      playSlide(700, 250, 0.25, 'sine', 0.12, 0);
+      playSlide(700, 250, 0.25, 'sine', 0.24, 0);
     }
   }
 
-  // Nhạc nền (Cơ 26/11): vòng nhạc hộp 8 giây, hợp âm C–G–Am–F, rất nhỏ
-  // (0.045) để nằm dưới giọng MC. Chạy bằng setInterval; tắt/mở bằng
+  // Nhạc nền (Cơ 26/11, x2 27/11 ~01:58): vòng nhạc hộp 8 giây, hợp âm C–G–Am–F
+  // (0.09 giai điệu / 0.10 trầm) vẫn nằm dưới giọng MC (1.0). Chạy bằng setInterval; tắt/mở bằng
   // toggle "Nhạc nền" (cần bật cả "Âm thanh hiệu ứng" vì chung AudioContext).
   const MUSIC_BAR_MS = 8000;
   const MUSIC_MELODY = [659.25, 783.99, 1046.5, 783.99, 880.0, 783.99, 659.25, 523.25,
@@ -361,10 +361,10 @@
     const ctx = ensureAudioCtx();
     if (!ctx || ctx.state !== 'running') return;
     for (let i = 0; i < MUSIC_MELODY.length; i++) {
-      playTone(MUSIC_MELODY[i], 0.42, 'triangle', 0.045, i * 0.5);
+      playTone(MUSIC_MELODY[i], 0.42, 'triangle', 0.09, i * 0.5);
     }
     for (let b = 0; b < MUSIC_BASS.length; b++) {
-      playTone(MUSIC_BASS[b], 1.8, 'sine', 0.05, b * 2);
+      playTone(MUSIC_BASS[b], 1.8, 'sine', 0.1, b * 2);
     }
   }
   function startMusic() {
@@ -1451,7 +1451,31 @@
         state.auraAudio.preload = 'auto';
       }
       const a = state.auraAudio;
+      a.volume = 1.0; // Phần tử audio đã ở tối đa — tăng thêm bằng gain Web Audio.
       a.currentTime = AURA_MUSIC_START_SEC;
+      // Khuếch đại gấp đôi (Cơ 27/11 ~01:58). aura.mp3 đo bằng ffmpeg đã chạm
+      // đỉnh 0 dB nên gain 2.0 trần sẽ vỡ tiếng -> nén trước bằng compressor
+      // (threshold -9, ratio 8) rồi mới gain 2.0: to lên mà không rè.
+      // Chỉ nối một lần: createMediaElementSource ném lỗi nếu gọi 2 lần cho 1 phần tử.
+      if (!state.auraGainNode) {
+        const ctx = ensureAudioCtx();
+        if (ctx && typeof ctx.createMediaElementSource === 'function') {
+          const src = ctx.createMediaElementSource(a);
+          let node = src;
+          if (typeof ctx.createDynamicsCompressor === 'function') {
+            const comp = ctx.createDynamicsCompressor();
+            comp.threshold.value = -9; comp.knee.value = 6; comp.ratio.value = 8;
+            comp.attack.value = 0.003; comp.release.value = 0.25;
+            src.connect(comp);
+            node = comp;
+          }
+          const g = ctx.createGain();
+          g.gain.value = 2.0;
+          node.connect(g);
+          g.connect(ctx.destination);
+          state.auraGainNode = g;
+        }
+      }
       const p = a.play();
       if (p && p.catch) p.catch(() => {});
     } catch (e) {}
