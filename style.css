@@ -1811,3 +1811,32 @@ body {
   color: #3f2d12;
   font-weight: 800;
 }
+
+/* Bảng trêu cô giáo (Cơ 26/11) — luôn hiện dưới dải quà, màu hồng phân biệt */
+.tease-perks-strip {
+  flex-shrink: 0;
+  padding: 10px 22px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  border: 2px solid rgba(190, 24, 93, 0.4);
+  text-align: center;
+}
+
+.tease-perks-line {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #4a1526;
+}
+
+.tease-perks-title {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #be185d;
+}
+
+.tease-perks-line strong {
+  color: #4a1526;
+  font-weight: 800;
+}
