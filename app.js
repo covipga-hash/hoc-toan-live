@@ -35,6 +35,7 @@
     teaseLayer: document.getElementById('tease-layer'),
     teacherFigure: document.querySelector('.teacher-figure'),
     teacherScream: document.getElementById('teacher-scream'),
+    auraLayer: document.getElementById('aura-layer'),
     questionNumber: document.getElementById('question-number'),
     directionBadge: document.getElementById('direction-badge'),
     roundStatusPill: document.getElementById('round-status-pill'),
@@ -212,6 +213,7 @@
   // ?tease=N: tự trêu cô giáo 1 lần sau khi tải (N = số xu, 1–99) — chỉ để
   // kiểm chứng trực quan, không ảnh hưởng game thật (không có tham số thì thôi).
   const paramTease = parseInt(params.get('tease') || '', 10);
+  const paramAura = params.get('aura') === '1';
 
   // -----------------------------
   // Web Audio Synthesized SFX
@@ -1352,6 +1354,8 @@
     showGiftToast(user, giftName, coins, avatar);
     playGiftSfx(coins);
     const teaseTier = triggerTeacherTease(coins);
+    // Aura 5 xu (Cơ 26/11): đúng 5 xu mới hiện nhân vật avatar + nhạc aura.
+    if (coins === 5) triggerAura(user, avatar);
     // Chỉ cảm ơn bằng giọng khi đang trong vòng (câu cảm ơn nói lúc hết giờ
     // hoặc tổng kết sẽ bị câu sau cắt ngang). Quà lớn thì MC nói thêm 1 câu
     // trêu trong CÙNG 1 lần đọc (không thêm lần đọc mới — vẫn chống chồng tiếng).
@@ -1375,6 +1379,91 @@
       raiseDifficulty();
       changeTopic();
     }
+  }
+
+  // -----------------------------
+  // Hiệu ứng AURA khi tặng 5 xu (Cơ 26/11)
+  // Nhân vật avatar của người tặng bay lơ lửng bên trái bảng, nhạc aura
+  // phát từ giây 53 trong 5 giây, số +36/+1000/+10000 Aura bay lên luân phiên.
+  // Mặc định hiện 5 giây như trò trêu.
+  // -----------------------------
+  const AURA_NUMBERS = ['+36 Aura', '+1000 Aura', '+10000 Aura'];
+  const AURA_DURATION_MS = 5000;
+  const AURA_MUSIC_START_SEC = 53;
+
+  function triggerAura(user, avatar) {
+    const layer = els.auraLayer;
+    if (!layer) return false;
+    // Dừng aura đang chạy (nhạc + số bay) rồi hiện aura mới của người mới nhất.
+    stopAura();
+    const cleanUser = String(user || 'Người xem').trim() || 'Người xem';
+    const figure = document.createElement('div');
+    figure.className = 'aura-figure';
+    if (avatar) {
+      const img = document.createElement('img');
+      img.className = 'aura-avatar';
+      img.src = avatar;
+      img.alt = cleanUser;
+      figure.appendChild(img);
+    } else {
+      const fb = document.createElement('span');
+      fb.className = 'aura-avatar-fallback';
+      fb.textContent = cleanUser.charAt(0).toUpperCase();
+      figure.appendChild(fb);
+    }
+    const nameEl = document.createElement('span');
+    nameEl.className = 'aura-name';
+    nameEl.textContent = cleanUser;
+    figure.appendChild(nameEl);
+    layer.appendChild(figure);
+    // Số aura bay lên luân phiên mỗi ~0.8s.
+    let idx = 0;
+    const spawnFloat = () => {
+      const s = document.createElement('span');
+      s.className = 'aura-float';
+      s.textContent = AURA_NUMBERS[idx % AURA_NUMBERS.length];
+      idx++;
+      s.style.left = (18 + Math.random() * 50) + 'px';
+      layer.appendChild(s);
+      setTimeout(() => s.remove(), 1300);
+    };
+    spawnFloat();
+    state.auraFloatTimer = setInterval(spawnFloat, 800);
+    // Nhạc aura: phát từ giây 53, đúng 5 giây.
+    playAuraMusic();
+    state.auraUntil = Date.now() + AURA_DURATION_MS;
+    state.auraTimer = setTimeout(stopAura, AURA_DURATION_MS);
+    return true;
+  }
+
+  function stopAura() {
+    if (state.auraTimer) { clearTimeout(state.auraTimer); state.auraTimer = null; }
+    if (state.auraFloatTimer) { clearInterval(state.auraFloatTimer); state.auraFloatTimer = null; }
+    if (els.auraLayer) els.auraLayer.innerHTML = '';
+    stopAuraMusic();
+    state.auraUntil = 0;
+  }
+
+  function playAuraMusic() {
+    try {
+      if (!state.auraAudio) {
+        state.auraAudio = new Audio('aura.mp3');
+        state.auraAudio.preload = 'auto';
+      }
+      const a = state.auraAudio;
+      a.currentTime = AURA_MUSIC_START_SEC;
+      const p = a.play();
+      if (p && p.catch) p.catch(() => {});
+    } catch (e) {}
+  }
+
+  function stopAuraMusic() {
+    try {
+      const a = state.auraAudio;
+      if (!a) return;
+      a.pause();
+      a.currentTime = AURA_MUSIC_START_SEC;
+    } catch (e) {}
   }
 
   // -----------------------------
@@ -2146,6 +2235,7 @@
       if (!Number.isNaN(paramTease) && paramTease >= 1 && paramTease <= 99) {
         setTimeout(() => triggerTeacherTease(paramTease), 1500);
       }
+      if (paramAura) setTimeout(() => triggerAura('Người xem', ''), 1500);
 
       // Kết nối Ably để nhận bình luận thật (trang tĩnh GitHub Pages cũng dùng đường này)
       connectAbly();
@@ -2181,6 +2271,7 @@
     submitComment: handleIncomingComment,
     submitGift: handleIncomingGift,
     teaseTeacher: triggerTeacherTease,
+    triggerAura,
     ably: () => ({
       connected: state.ablyConnected,
       channel: state.ablyChannel ? state.ablyChannel.name : null,
