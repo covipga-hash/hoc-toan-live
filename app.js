@@ -209,6 +209,9 @@
     state.timeLeft = paramTime;
   }
   const paramStart = parseInt(params.get('start') || '', 10);
+  // ?tease=N: tự trêu cô giáo 1 lần sau khi tải (N = số xu, 1–99) — chỉ để
+  // kiểm chứng trực quan, không ảnh hưởng game thật (không có tham số thì thôi).
+  const paramTease = parseInt(params.get('tease') || '', 10);
 
   // -----------------------------
   // Web Audio Synthesized SFX
@@ -2140,6 +2143,9 @@
 
       startQuestion(startIdx);
       startMusic();
+      if (!Number.isNaN(paramTease) && paramTease >= 1 && paramTease <= 99) {
+        setTimeout(() => triggerTeacherTease(paramTease), 1500);
+      }
 
       // Kết nối Ably để nhận bình luận thật (trang tĩnh GitHub Pages cũng dùng đường này)
       connectAbly();
