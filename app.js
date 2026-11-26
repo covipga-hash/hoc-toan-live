@@ -315,20 +315,29 @@
     }
   }
 
-  // Tiếng trò trêu cô giáo theo mức quà: gián rơi, chuột chíu, nhện, nhảy.
+  // Tiếng trò trêu cô giáo theo mức quà — MỖI TRÒ CÓ TIẾNG RIÊNG (Cơ 26/11):
+  // gián rơi (trượt xuống) + cô la "Á!" bằng giọng MC; chuột chíu 3 tiếng +
+  // boing khi cô nhảy; nhện (trượt rợn) + tiếng nhịp thục dầu; mức 20 xu+
+  // gộp cả bộ. Tiếng la "Á!" nằm trong câu cảm ơn của MC (cùng 1 lần đọc).
   function playTeaseSfx(tierMin) {
     if (tierMin >= 20) {
-      playTone(1250, 0.06, 'sine', 0.12, 0);
-      playTone(1250, 0.06, 'sine', 0.12, 0.09);
+      playTone(1400, 0.05, 'sine', 0.12, 0);
+      playTone(1650, 0.05, 'sine', 0.12, 0.07);
+      playTone(1400, 0.05, 'sine', 0.12, 0.14);
       playSlide(700, 220, 0.28, 'sine', 0.12, 0.05);
       playSlide(300, 750, 0.22, 'sine', 0.12, 0.15);
       playTone(160, 0.3, 'triangle', 0.12, 0.2);
+      // Nhịp thục dầu: 5 tiếng thump theo nhịp chống đẩy (bắt đầu sau cú nhảy)
+      [1.4, 2.2, 3.0, 3.8, 4.6].forEach((d) => playTone(90, 0.12, 'sine', 0.14, d));
     } else if (tierMin >= 10) {
       playTone(160, 0.3, 'triangle', 0.12, 0);
       playSlide(420, 150, 0.3, 'sine', 0.1, 0.05);
+      // Nhịp thục dầu: 5 tiếng thump theo nhịp chống đẩy
+      [0.5, 1.35, 2.25, 3.15, 4.0].forEach((d) => playTone(90, 0.12, 'sine', 0.14, d));
     } else if (tierMin >= 2) {
-      playTone(1250, 0.06, 'sine', 0.12, 0);
-      playTone(1250, 0.06, 'sine', 0.12, 0.09);
+      playTone(1400, 0.05, 'sine', 0.12, 0);
+      playTone(1650, 0.05, 'sine', 0.12, 0.07);
+      playTone(1400, 0.05, 'sine', 0.12, 0.14);
       playSlide(300, 750, 0.22, 'sine', 0.12, 0.05);
     } else {
       playSlide(700, 250, 0.25, 'sine', 0.12, 0);
@@ -1271,16 +1280,19 @@
   }
 
   // Trêu ghẹo cô giáo khi có quà (Cơ 26/11) — quà càng lớn trò càng mạnh:
-  // 1 xu: gián rơi + cô nhảy nhẹ. 2–9 xu: chuột chạy + cô nhảy + la "Á!".
-  // 10–19 xu: nhện rơi + cô thục dầu. 20 xu+: gián + chuột + nhện + cô nhảy
-  // cao + la "Á á á!" + thục dầu. MỖI TRÒ HIỆN 5 GIÂY rồi hết (Cơ 26/11).
+  // 1 xu: gián rơi + cô nhảy nhẹ + la "Á!" + né sang trái.
+  // 2–9 xu: chuột chạy + cô nhảy + la "Á!" + né mạnh.
+  // 10–19 xu: nhện rơi + cô la "Á!" + né + thục dầu.
+  // 20 xu+: gián + chuột + nhện + cô nhảy cao + la "Á á á!" + né + thục dầu.
+  // Cô PHẢI phản ứng lại trò trêu (la/nhảy/né), không đứng yên (Cơ 26/11).
+  // MỖI TRÒ HIỆN 5 GIÂY rồi hết.
   // Chống loạn: trò đang chạy thì quà nhỏ hơn không chen ngang, quà lớn
   // hơn được nâng cấp (quà 1 xu cũng phải chờ đủ 5s mới trêu lại).
   const TEASE_TIERS = [
     { min: 20, critters: ['🪳', '🐭', '🕷️'], teacherClass: 'tease-mega', scream: 'Á á á!', voice: ' Á á á! Gián, chuột, nhện luôn!' },
-    { min: 10, critters: ['🕷️'], teacherClass: 'tease-pushup', scream: '', voice: ' Á! Có nhện kìa!' },
+    { min: 10, critters: ['🕷️'], teacherClass: 'tease-pushup', scream: 'Á!', voice: ' Á! Có nhện kìa!' },
     { min: 2, critters: ['🐭'], teacherClass: 'tease-jump', scream: 'Á!', voice: ' Có chuột kìa, cô sợ quá!' },
-    { min: 1, critters: ['🪳'], teacherClass: 'tease-jump-small', scream: '', voice: '' },
+    { min: 1, critters: ['🪳'], teacherClass: 'tease-jump-small', scream: 'Á!', voice: ' Á!' },
   ];
   const TEASE_CLASSES = ['tease-jump-small', 'tease-jump', 'tease-pushup', 'tease-mega'];
 
