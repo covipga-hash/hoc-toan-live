@@ -1784,33 +1784,6 @@ body {
    GIFT PERKS STRIP — dải ưu đãi tặng quà (luôn hiện, tĩnh)
    ========================================================= */
 
-.gift-perks-strip {
-  flex-shrink: 0;
-  padding: 10px 22px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #fef9c3 0%, #fde68a 100%);
-  border: 2px solid rgba(180, 130, 40, 0.5);
-  text-align: center;
-}
-
-.gift-perks-line {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: #3f2d12;
-}
-
-.gift-perks-title {
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #92400e;
-}
-
-.gift-perks-line strong {
-  color: #3f2d12;
-  font-weight: 800;
-}
 
 /* Bảng trêu cô giáo (Cơ 26/11) — luôn hiện dưới dải quà, màu hồng phân biệt */
 .tease-perks-strip {
