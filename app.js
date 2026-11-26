@@ -32,6 +32,9 @@
     connectionLabel: document.getElementById('connection-label'),
 
     questionStage: document.getElementById('question-stage'),
+    teaseLayer: document.getElementById('tease-layer'),
+    teacherFigure: document.querySelector('.teacher-figure'),
+    teacherScream: document.getElementById('teacher-scream'),
     questionNumber: document.getElementById('question-number'),
     directionBadge: document.getElementById('direction-badge'),
     roundStatusPill: document.getElementById('round-status-pill'),
@@ -98,6 +101,7 @@
     toggleDemo: document.getElementById('toggle-demo'),
     toggleAutoNext: document.getElementById('toggle-auto-next'),
     toggleSfx: document.getElementById('toggle-sfx'),
+    toggleMusic: document.getElementById('toggle-music'),
     toggleVoice: document.getElementById('toggle-voice'),
     wsStatus: document.getElementById('ws-status'),
     inputTiktokUser: document.getElementById('input-tiktok-user'),
@@ -153,6 +157,7 @@
     demoMode: true,
     autoNext: true,
     sfxEnabled: true,
+    musicOn: true,
     voiceOn: true,
     lastUtteranceAt: 0, // mốc lần speak gần nhất — để nhận biết hàng đợi bị kẹt
     voiceCache: {},
@@ -263,6 +268,100 @@
     playTone(720, 0.06, 'sine', 0.075, 0);
   }
 
+  // Trượt tần số (boing / rơi) — dùng cho trò trêu cô giáo.
+  function playSlide(freqFrom, freqTo, duration, type = 'sine', volume = 0.12, delay = 0) {
+    const ctx = ensureAudioCtx();
+    if (!ctx) return;
+    try {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      const start = ctx.currentTime + delay;
+      osc.type = type;
+      osc.frequency.setValueAtTime(freqFrom, start);
+      osc.frequency.linearRampToValueAtTime(freqTo, start + duration);
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(volume, start + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(start);
+      osc.stop(start + duration + 0.02);
+    } catch {
+      // Ignore autoplay blocks gracefully
+    }
+  }
+
+  // Đáp án sai: tiếng "bụp" trầm 2 nốt đi xuống (chống spam 2s).
+  function playWrongSfx() {
+    const now = Date.now();
+    if (now - (state.lastWrongSfxAt || 0) < 2000) return;
+    state.lastWrongSfxAt = now;
+    playTone(233.08, 0.18, 'sawtooth', 0.07, 0);
+    playTone(174.61, 0.26, 'sawtooth', 0.07, 0.12);
+  }
+
+  // Quà tới: chuông 3 nốt; quà lớn thêm nốt cao (chống spam 1,5s với quà nhỏ).
+  function playGiftSfx(coins) {
+    const now = Date.now();
+    if (coins < 10 && now - (state.lastGiftSfxAt || 0) < 1500) return;
+    state.lastGiftSfxAt = now;
+    playTone(523.25, 0.12, 'triangle', 0.16, 0);
+    playTone(659.25, 0.12, 'triangle', 0.16, 0.07);
+    playTone(783.99, 0.2, 'triangle', 0.18, 0.14);
+    if (coins >= 10) playTone(1046.5, 0.3, 'triangle', 0.18, 0.21);
+    if (coins >= 20) {
+      playTone(1318.5, 0.3, 'triangle', 0.16, 0.3);
+      playTone(1567.98, 0.35, 'triangle', 0.15, 0.38);
+    }
+  }
+
+  // Tiếng trò trêu cô giáo theo mức quà: gián rơi, chuột chíu, nhện, nhảy.
+  function playTeaseSfx(tierMin) {
+    if (tierMin >= 20) {
+      playTone(1250, 0.06, 'sine', 0.12, 0);
+      playTone(1250, 0.06, 'sine', 0.12, 0.09);
+      playSlide(700, 220, 0.28, 'sine', 0.12, 0.05);
+      playSlide(300, 750, 0.22, 'sine', 0.12, 0.15);
+      playTone(160, 0.3, 'triangle', 0.12, 0.2);
+    } else if (tierMin >= 10) {
+      playTone(160, 0.3, 'triangle', 0.12, 0);
+      playSlide(420, 150, 0.3, 'sine', 0.1, 0.05);
+    } else if (tierMin >= 2) {
+      playTone(1250, 0.06, 'sine', 0.12, 0);
+      playTone(1250, 0.06, 'sine', 0.12, 0.09);
+      playSlide(300, 750, 0.22, 'sine', 0.12, 0.05);
+    } else {
+      playSlide(700, 250, 0.25, 'sine', 0.12, 0);
+    }
+  }
+
+  // Nhạc nền (Cơ 26/11): vòng nhạc hộp 8 giây, hợp âm C–G–Am–F, rất nhỏ
+  // (0.045) để nằm dưới giọng MC. Chạy bằng setInterval; tắt/mở bằng
+  // toggle "Nhạc nền" (cần bật cả "Âm thanh hiệu ứng" vì chung AudioContext).
+  const MUSIC_BAR_MS = 8000;
+  const MUSIC_MELODY = [659.25, 783.99, 1046.5, 783.99, 880.0, 783.99, 659.25, 523.25,
+                        587.33, 659.25, 698.46, 659.25, 587.33, 523.25, 587.33, 659.25];
+  const MUSIC_BASS = [130.81, 98.0, 110.0, 87.31]; // C3 G2 A2 F2, mỗi ô 2s
+  function scheduleMusicBar() {
+    if (!state.musicOn) return;
+    const ctx = ensureAudioCtx();
+    if (!ctx || ctx.state !== 'running') return;
+    for (let i = 0; i < MUSIC_MELODY.length; i++) {
+      playTone(MUSIC_MELODY[i], 0.42, 'triangle', 0.045, i * 0.5);
+    }
+    for (let b = 0; b < MUSIC_BASS.length; b++) {
+      playTone(MUSIC_BASS[b], 1.8, 'sine', 0.05, b * 2);
+    }
+  }
+  function startMusic() {
+    if (state.musicTimer) return;
+    scheduleMusicBar();
+    state.musicTimer = setInterval(scheduleMusicBar, MUSIC_BAR_MS);
+  }
+  function stopMusic() {
+    if (state.musicTimer) { clearInterval(state.musicTimer); state.musicTimer = null; }
+  }
+
   // -----------------------------
   // Voice (BLV / TTS) — speechSynthesis
   // Same pattern as the zombie game (proven): vi-VN, rate 1.4, pitch 1.12.
@@ -289,15 +388,19 @@
     try { speechSynthesis.addEventListener('voiceschanged', () => { state.voiceCache = {}; }); } catch (e) {}
   }
 
-  // Female-voice preference for English (American) speech: the answer word
-  // (and the English keyword in a question) must be read by a female voice
-  // with American pronunciation. speechSynthesis voices carry no gender
-  // flag, so match well-known female voice names; fall back to the
-  // default pick when no female voice is installed.
+  // Ưu tiên GIỌNG NỮ cho mọi câu đọc (Cơ 26/11: MC là cô giáo).
+  // Trước đây chỉ câu tiếng Anh mới ưu tiên giọng nữ; giờ cả tiếng Việt
+  // cũng vậy. speechSynthesis voices carry no gender flag, so match
+  // well-known female voice names; fall back to the default pick when
+  // no female voice is installed (giọng nghe được trên máy Cơ phụ thuộc
+  // vào voice đã cài trên máy đó).
   const FEMALE_VOICE_HINTS = [
     'zira', 'samantha', 'aria', 'jenny', 'ava', 'allison', 'susan',
     'karen', 'moira', 'tessa', 'fiona', 'veena', 'google us english',
     'female',
+    // Giọng nữ tiếng Việt (chỉ khớp trong voice cùng ngôn ngữ vi-VN):
+    'linh', 'thu', 'ngan', 'lan', 'hoa', 'mai', 'huong', 'hanh',
+    'google tiếng việt',
   ];
 
   function pickFemaleVoice(lang) {
@@ -338,7 +441,7 @@
       const useLang = lang || 'vi-VN';
       const u = new SpeechSynthesisUtterance(clean);
       u.lang = useLang; u.rate = 1.15; u.pitch = 1.12; u.volume = 1.0; // Tốc độ 1.15 (Cơ 25/11 03:14: giảm từ 1.4 về mức trước lúc tăng tối 24/11). Âm lượng 1.0 là tối đa trình duyệt cho phép (Cơ 24/11 20:49: +50% từ 0.75 = 1.125, vượt trần 1.0 nên lấy 1.0, thực tăng ~33%).
-      const voice = voiceOverride || pickVoice(useLang);
+      const voice = voiceOverride || pickFemaleVoice(useLang); // MC cô giáo: ưu tiên giọng nữ, không có thì lấy giọng mặc định
       if (voice) u.voice = voice;
       // Tự cứu khi hàng đợi giọng bị kẹt từ lần đọc trước.
       clearStalledSpeechQueue();
@@ -1067,6 +1170,9 @@
         `<strong>${escapeHtml(cleanUser)}</strong> ${rankText} (+${points} điểm)! Chờ hết giờ xem đáp án nhé!`;
     }
 
+    // Đáp án sai (chỉ khi gõ số mà sai, không phải tán gẫu): tiếng "bụp".
+    if (state.phase === 'playing' && currentQ && guessNum != null && !awarded) playWrongSfx();
+
     appendCommentToFeed(cleanUser, cleanText, awarded, awardedPoints);
     voiceOnComment(cleanUser, awarded, guessNum);
   }
@@ -1164,6 +1270,61 @@
     }, 4000);
   }
 
+  // Trêu ghẹo cô giáo khi có quà (Cơ 26/11) — quà càng lớn trò càng mạnh:
+  // 1 xu: gián rơi + cô nhảy nhẹ. 2–9 xu: chuột chạy + cô nhảy + la "Á!".
+  // 10–19 xu: nhện rơi + cô thục dầu. 20 xu+: gián + chuột + nhện + cô nhảy
+  // cao + la "Á á á!" + thục dầu. MỖI TRÒ HIỆN 5 GIÂY rồi hết (Cơ 26/11).
+  // Chống loạn: trò đang chạy thì quà nhỏ hơn không chen ngang, quà lớn
+  // hơn được nâng cấp (quà 1 xu cũng phải chờ đủ 5s mới trêu lại).
+  const TEASE_TIERS = [
+    { min: 20, critters: ['🪳', '🐭', '🕷️'], teacherClass: 'tease-mega', scream: 'Á á á!', voice: ' Á á á! Gián, chuột, nhện luôn!' },
+    { min: 10, critters: ['🕷️'], teacherClass: 'tease-pushup', scream: '', voice: ' Á! Có nhện kìa!' },
+    { min: 2, critters: ['🐭'], teacherClass: 'tease-jump', scream: 'Á!', voice: ' Có chuột kìa, cô sợ quá!' },
+    { min: 1, critters: ['🪳'], teacherClass: 'tease-jump-small', scream: '', voice: '' },
+  ];
+  const TEASE_CLASSES = ['tease-jump-small', 'tease-jump', 'tease-pushup', 'tease-mega'];
+
+  function triggerTeacherTease(coins) {
+    const n = Number(coins) || 0;
+    if (n < 1) return null;
+    const tier = TEASE_TIERS.find((t) => n >= t.min);
+    if (!tier) return null;
+    const now = Date.now();
+    if ((state.teacherTeaseUntil || 0) > now && tier.min <= (state.teacherTeaseTier || 0)) return null;
+    const layer = els.teaseLayer;
+    const fig = els.teacherFigure;
+    const scream = els.teacherScream;
+    if (!layer || !fig) return null;
+    if (state.teacherTeaseTimer) clearTimeout(state.teacherTeaseTimer);
+    fig.classList.remove(...TEASE_CLASSES);
+    void fig.offsetWidth; // khởi động lại animation
+    const single = tier.critters.length === 1;
+    layer.innerHTML = tier.critters.map((c, i) =>
+      `<span class="tease-critter ${single && tier.min === 2 ? 'run' : 'drop'}" style="animation-delay:${i * 0.25}s">${c}</span>`
+    ).join('');
+    fig.classList.add(tier.teacherClass);
+    playTeaseSfx(tier.min);
+    if (scream) {
+      if (tier.scream) {
+        scream.textContent = tier.scream;
+        scream.classList.add('show');
+      } else {
+        scream.classList.remove('show');
+      }
+    }
+    state.lastTeacherTeaseAt = now;
+    state.teacherTeaseTier = tier.min;
+    state.teacherTeaseUntil = now + 5000; // mỗi trò hiện 5 giây (Cơ 26/11)
+    state.teacherTeaseTimer = setTimeout(() => {
+      layer.innerHTML = '';
+      fig.classList.remove(...TEASE_CLASSES);
+      if (scream) scream.classList.remove('show');
+      state.teacherTeaseUntil = 0;
+      state.teacherTeaseTier = 0;
+    }, 5000);
+    return tier;
+  }
+
   // 1 event quà (từ Ably hoặc test): banner + giọng cảm ơn cho mọi quà,
   // rồi áp perk theo số xu.
   function handleIncomingGift(gift) {
@@ -1174,9 +1335,14 @@
     const avatar = gift.avatar || '';
 
     showGiftToast(user, giftName, coins, avatar);
+    playGiftSfx(coins);
+    const teaseTier = triggerTeacherTease(coins);
     // Chỉ cảm ơn bằng giọng khi đang trong vòng (câu cảm ơn nói lúc hết giờ
-    // hoặc tổng kết sẽ bị câu sau cắt ngang).
-    if (state.phase === 'playing') speak(`Cảm ơn ${user} đã tặng ${giftName}!`, false);
+    // hoặc tổng kết sẽ bị câu sau cắt ngang). Quà lớn thì MC nói thêm 1 câu
+    // trêu trong CÙNG 1 lần đọc (không thêm lần đọc mới — vẫn chống chồng tiếng).
+    if (state.phase === 'playing') {
+      speak(`Cảm ơn ${user} đã tặng ${giftName}!${teaseTier ? teaseTier.voice : ''}`, false);
+    }
 
     // Ghi vào bảng TOP TẶNG QUÀ (cập nhật trực tiếp, trước khi áp perk)
     recordDonation(user, coins, avatar);
@@ -1817,6 +1983,13 @@
       state.sfxEnabled = els.toggleSfx.checked;
     });
 
+    els.toggleMusic.checked = state.musicOn;
+    els.toggleMusic.addEventListener('change', () => {
+      state.musicOn = els.toggleMusic.checked;
+      if (state.musicOn) startMusic();
+      else stopMusic();
+    });
+
     els.toggleVoice.checked = state.voiceOn;
     els.toggleVoice.addEventListener('change', () => {
       state.voiceOn = els.toggleVoice.checked;
@@ -1954,6 +2127,7 @@
           : 0;
 
       startQuestion(startIdx);
+      startMusic();
 
       // Kết nối Ably để nhận bình luận thật (trang tĩnh GitHub Pages cũng dùng đường này)
       connectAbly();
@@ -1979,6 +2153,7 @@
       hintsHidden: state.hintsHidden,
       revealedDigits: state.revealedDigitIdx.size,
       voiceOn: state.voiceOn,
+      musicOn: state.musicOn,
       donors: getSortedDonors().map((d) => ({
         name: d.name,
         totalCoins: d.totalCoins,
@@ -1987,6 +2162,7 @@
     }),
     submitComment: handleIncomingComment,
     submitGift: handleIncomingGift,
+    teaseTeacher: triggerTeacherTease,
     ably: () => ({
       connected: state.ablyConnected,
       channel: state.ablyChannel ? state.ablyChannel.name : null,

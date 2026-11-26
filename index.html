@@ -50,6 +50,14 @@
 
         <!-- 2. QUESTION & ANSWER STAGE -->
         <section class="question-stage" id="question-stage" aria-label="Khu vực câu hỏi">
+          <!-- Cô giáo đứng dạy cạnh bảng đen (Cơ 26/11) -->
+          <div class="teacher-figure" aria-label="Cô giáo đang đứng dạy">
+            <span class="teacher-emoji">👩‍🏫</span>
+            <span class="teacher-name">Cô giáo</span>
+          </div>
+          <!-- Lớp trêu cô giáo khi có quà (Cơ 26/11): gián/chuột/nhện -->
+          <div class="tease-layer" id="tease-layer" aria-hidden="true"></div>
+          <div class="teacher-scream" id="teacher-scream" aria-hidden="true">Á!</div>
           <div class="question-meta-row">
             <div class="question-number-badge" id="question-number">CÂU 1 / 120</div>
             <div class="direction-badge" id="direction-badge">TÍNH NHANH</div>
@@ -303,6 +311,10 @@
         <label class="toggle-row">
           <span>🔊 Âm thanh hiệu ứng (Web Audio)</span>
           <input type="checkbox" id="toggle-sfx" checked />
+        </label>
+        <label class="toggle-row">
+          <span>🎵 Nhạc nền</span>
+          <input type="checkbox" id="toggle-music" checked />
         </label>
         <label class="toggle-row">
           <span>🎙️ Giọng đọc (BLV/TTS)</span>

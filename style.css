@@ -267,6 +267,163 @@ body {
   text-shadow: 0 3px 0 rgba(255, 255, 255, 0.65), 0 8px 18px rgba(90, 60, 20, 0.25);
 }
 
+/* Cô giáo ĐỨNG DẠY cạnh bảng đen (Cơ 26/11: đứng giảng bài, không phải
+   ảnh chân dung). Đặt tuyệt đối ở cạnh phải bảng — vùng giữa bảng hai bên
+   đề bài/ô đáp án vốn trống nên không che nội dung; không ảnh hưởng layout
+   (position:absolute, bảng đã có position:relative). */
+.question-stage {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Trêu cô giáo khi có quà (Cơ 26/11) — gián/chuột/nhện + nhảy/thục dầu/la.
+   Lớp trêu phủ trên bảng (không che toast), không ảnh hưởng layout. */
+.tease-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tease-critter {
+  position: absolute;
+  font-size: 56px;
+  line-height: 1;
+  opacity: 0;
+}
+
+.tease-critter.drop {
+  left: 140px;
+  top: 0;
+  animation: teaseDrop 1.5s ease-in both;
+}
+
+.tease-critter.run {
+  left: 0;
+  bottom: 170px;
+  animation: teaseRun 4.8s linear both; /* chuột chạy chậm hết 5s */
+}
+
+@keyframes teaseDrop {
+  0% { opacity: 1; transform: translate(0, -70px) rotate(0deg); }
+  35% { opacity: 1; transform: translate(24px, 130px) rotate(28deg); }
+  70% { opacity: 1; transform: translate(-12px, 260px) rotate(-18deg); }
+  100% { opacity: 1; transform: translate(8px, 330px) rotate(12deg); }
+}
+
+@keyframes teaseRun {
+  0% { opacity: 1; transform: translate(-90px, 0) scaleX(1); }
+  100% { opacity: 1; transform: translate(1060px, 0) scaleX(1); }
+}
+
+/* Cô giáo nhảy / thục dầu — keyframes giữ translateY(-50%) căn giữa bảng */
+.teacher-figure.tease-jump-small {
+  animation: teaseJumpSmall 0.7s ease 2 both; /* nhảy nhẹ 2 lần */
+}
+
+.teacher-figure.tease-jump {
+  animation: teaseJump 0.7s ease 3 both; /* nhảy 3 lần */
+}
+
+.teacher-figure.tease-pushup {
+  animation: teasePushup 4.5s ease-in-out both; /* thục dầu nhiều nhịp hết 5s */
+}
+
+.teacher-figure.tease-mega {
+  animation: teaseJumpBig 0.9s ease both, teasePushup 4s ease-in-out 0.9s both;
+}
+
+@keyframes teaseJumpSmall {
+  0%, 100% { transform: translateY(-50%); }
+  50% { transform: translateY(calc(-50% - 35px)); }
+}
+
+@keyframes teaseJump {
+  0%, 100% { transform: translateY(-50%); }
+  50% { transform: translateY(calc(-50% - 70px)); }
+}
+
+@keyframes teaseJumpBig {
+  0%, 100% { transform: translateY(-50%); }
+  45% { transform: translateY(calc(-50% - 110px)) rotate(-6deg); }
+  70% { transform: translateY(calc(-50% - 20px)) rotate(4deg); }
+}
+
+@keyframes teasePushup {
+  0%, 100% { transform: translateY(-50%) rotate(0deg) scaleY(1); }
+  12% { transform: translateY(-50%) rotate(-14deg) scaleY(0.82); }
+  24% { transform: translateY(-50%) rotate(0deg) scaleY(1); }
+  36% { transform: translateY(-50%) rotate(-14deg) scaleY(0.82); }
+  50% { transform: translateY(-50%) rotate(0deg) scaleY(1); }
+  64% { transform: translateY(-50%) rotate(-14deg) scaleY(0.82); }
+  78% { transform: translateY(-50%) rotate(0deg) scaleY(1); }
+  90% { transform: translateY(-50%) rotate(-14deg) scaleY(0.82); }
+}
+
+/* Bong bóng cô la "Á!" */
+.teacher-scream {
+  position: absolute;
+  right: 185px;
+  top: 28%;
+  z-index: 7;
+  padding: 10px 22px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 3px solid #14532d;
+  color: #b91c1c;
+  font-family: var(--font-chalk);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+}
+
+.teacher-scream::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  bottom: 12px;
+  border: 8px solid transparent;
+  border-left-color: #14532d;
+}
+
+.teacher-scream.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.teacher-figure {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.teacher-emoji {
+  font-size: 132px;
+  line-height: 1;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
+}
+
+.teacher-name {
+  font-family: var(--font-chalk);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fdfdf8;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
 /* =========================================================
    2. QUESTION & ANSWER STAGE
    ========================================================= */
