@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HỌC TOÁN — Cộng Trừ Nhân Chia Dưới 1000 | TikTok LIVE Game</title>
+  <meta name="description" content="Game tương tác TikTok LIVE Học Toán cộng trừ nhân chia dưới 1000 (9:16 1080x1920) dành cho OBS Browser Source và TikTok Live Studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body>
+  <div class="app-shell" id="app-shell">
+    <!-- 9:16 Livestream Stage Viewport -->
+    <main class="stage-viewport" id="stage-viewport">
+      <div class="game-stage" id="game-stage" role="application" aria-label="Game Học Toán Cộng Trừ Nhân Chia">
+        <!-- Confetti Canvas Overlay -->
+        <canvas id="confetti-canvas" width="1080" height="1920" aria-hidden="true"></canvas>
+
+        <!-- Floating Winner Toast -->
+        <div class="winner-toast" id="winner-toast" role="status" aria-live="polite">
+          <span class="toast-icon" aria-hidden="true">🎉</span>
+          <span class="toast-text" id="winner-toast-text">Minh Anh đoán đúng! +3 điểm</span>
+        </div>
+
+        <!-- Floating Gift Toast -->
+        <div class="gift-toast" id="gift-toast" role="status" aria-live="polite">
+          <span class="gift-toast-avatar" id="gift-toast-avatar">🎁</span>
+          <span class="toast-text" id="gift-toast-text"></span>
+        </div>
+
+        <!-- 1. TOP HEADER -->
+        <header class="game-header">
+          <div class="header-top-row">
+            <div class="live-badge" id="live-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>LIVE</span>
+            </div>
+            <div class="mode-pill" id="connection-pill">
+              <span class="mode-dot" id="connection-dot"></span>
+              <span id="connection-label">DEMO MODE</span>
+            </div>
+          </div>
+
+          <p class="game-subtitle">TOÁN HỌC - TÍNH NHANH</p>
+          <h1 class="game-title">HỌC TOÁN</h1>
+        </header>
+
+        <!-- 2. QUESTION & ANSWER STAGE -->
+        <section class="question-stage" id="question-stage" aria-label="Khu vực câu hỏi">
+          <div class="question-meta-row">
+            <div class="question-number-badge" id="question-number">CÂU 1 / 120</div>
+            <div class="direction-badge" id="direction-badge">TÍNH NHANH</div>
+            <div class="round-status-pill" id="round-status-pill">ĐANG ĐOÁN</div>
+          </div>
+
+          <div class="topic-badge" id="topic-badge">CHỦ ĐỀ: Phép cộng</div>
+
+          <div class="question-prompt-wrap">
+            <h2 class="question-text" id="question-text">
+              125 <span class="kw">+</span> 347 = ?
+            </h2>
+          </div>
+
+          <!-- Dynamic Letter Boxes -->
+          <div class="letter-boxes" id="letter-boxes" aria-label="Ô chữ đáp án"></div>
+
+          <!-- Hint Line -->
+          <div class="hint-area" id="hint-area">
+            <div class="hint-chips" id="hint-chips">
+              <span class="hint-chip" id="hint-word-type">Phép cộng</span>
+              <span class="hint-sep" aria-hidden="true">•</span>
+              <span class="hint-chip" id="hint-letter-count">3 chữ số</span>
+              <span class="hint-sep" aria-hidden="true">•</span>
+              <span class="hint-chip hint-chip-accent" id="hint-first-letter">Chữ số đầu: 4</span>
+            </div>
+            <p class="hint-instruction" id="hint-instruction">Bình luận con số đáp án nhé!</p>
+          </div>
+
+          <!-- Status / Answer Reveal Panel (fixed height slot to prevent layout shift) -->
+          <div class="answer-panel" id="answer-panel">
+            <!-- Active Guessing State -->
+            <div class="guessing-status" id="guessing-status">
+              <div class="guessing-status-icon" id="guessing-status-icon">⚡</div>
+              <div class="guessing-status-text" id="guessing-status-text">
+                Ai sẽ là người đoán đúng đầu tiên để nhận <strong>+3 điểm</strong>?
+              </div>
+            </div>
+
+            <!-- Answer Reveal State -->
+            <div class="reveal-card hidden" id="reveal-card">
+              <div class="reveal-top-row">
+                <div class="reveal-word-info">
+                  <span class="reveal-ipa" id="reveal-ipa">125 + 347</span>
+                  <span class="reveal-equals">=</span>
+                  <span class="reveal-meaning" id="reveal-meaning">472</span>
+                </div>
+                <div class="next-countdown-pill" id="next-countdown-pill">Tiếp theo: 5s</div>
+              </div>
+              <p class="reveal-example" id="reveal-example">
+                “một trăm hai mươi lăm cộng ba trăm bốn mươi bảy bằng bốn trăm bảy mươi hai”
+              </p>
+              <div class="reveal-winner-line" id="reveal-winner-line"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. COUNTDOWN TIMER -->
+        <section class="timer-section" id="timer-section" aria-label="Đồng hồ đếm ngược">
+          <div class="timer-header">
+            <span class="timer-label">⏱ THỜI GIAN</span>
+            <span class="timer-value" id="timer-value">45s</span>
+          </div>
+          <div class="timer-track" role="progressbar" aria-valuemin="0" aria-valuemax="45" aria-valuenow="45" id="timer-track">
+            <div class="timer-bar-fill" id="timer-bar-fill"></div>
+          </div>
+        </section>
+
+        <!-- 4. TOP 3 BOARD -->
+        <section class="top3-section" aria-label="Bảng xếp hạng Top 3">
+          <div class="top3-header">
+            <span class="top3-title">🏆 TOP 3</span>
+            <span class="top3-sub" id="total-players-label">0 người chơi</span>
+          </div>
+          <div class="top3-grid" id="top3-grid">
+            <div class="top3-card rank-1" id="top3-slot-1">
+              <div class="top3-medal">🥇</div>
+              <div class="top3-info">
+                <div class="top3-name">Chưa có</div>
+                <div class="top3-score">0 điểm</div>
+              </div>
+            </div>
+            <div class="top3-card rank-2" id="top3-slot-2">
+              <div class="top3-medal">🥈</div>
+              <div class="top3-info">
+                <div class="top3-name">Chưa có</div>
+                <div class="top3-score">0 điểm</div>
+              </div>
+            </div>
+            <div class="top3-card rank-3" id="top3-slot-3">
+              <div class="top3-medal">🥉</div>
+              <div class="top3-info">
+                <div class="top3-name">Chưa có</div>
+                <div class="top3-score">0 điểm</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4b. GIFT PERKS STRIP: ưu đãi khi tặng quà (luôn hiện) — dời lên trên
+             khung dưới để dễ thấy hơn (trước đây nằm dưới cùng, trên CTA) -->
+        <section class="gift-perks-strip" aria-label="Ưu đãi khi tặng quà">
+          <p class="gift-perks-line"><span class="gift-perks-title">🎁 TẶNG QUÀ NHẬN ƯU ĐÃI:</span> 1 xu: <strong>+5s + hé lộ chữ số đầu</strong> (tối đa +20s/vòng) • 5 xu: <strong>xáo trộn chủ đề</strong> • 10 xu: <strong>đổi chủ đề</strong> • 15 xu: <strong>nâng độ khó</strong> • 20 xu: <strong>khó + đổi chủ đề</strong></p>
+        </section>
+
+        <!-- 5. BOTTOM SPLIT: TOP CAO THỦ & BÌNH LUẬN -->
+        <section class="bottom-split" aria-label="Bảng xếp hạng và bình luận trực tiếp">
+          <!-- Left: TOP CAO THỦ -->
+          <div class="split-panel leaderboard-panel">
+            <div class="panel-header">
+              <span class="panel-title">👑 TOP CAO THỦ</span>
+              <span class="panel-count" id="leaderboard-count">TOP 5</span>
+            </div>
+            <ul class="leaderboard-list" id="leaderboard-list">
+              <li class="empty-state">Bình luận đáp án đúng để ghi danh lên bảng vàng!</li>
+            </ul>
+          </div>
+
+          <!-- Middle: TOP TẶNG QUÀ -->
+          <div class="split-panel donors-panel">
+            <div class="panel-header">
+              <span class="panel-title">🎁 TOP TẶNG QUÀ</span>
+              <span class="panel-count">TOP 3</span>
+            </div>
+            <ul class="donor-list" id="donor-list">
+              <li class="empty-state">Chưa có ai tặng quà — tặng quà để lên bảng!</li>
+            </ul>
+          </div>
+
+          <!-- Right: BÌNH LUẬN -->
+          <div class="split-panel comments-panel">
+            <div class="panel-header">
+              <span class="panel-title">💬 BÌNH LUẬN</span>
+              <span class="panel-count" id="comment-count">0</span>
+            </div>
+            <ul class="comment-feed" id="comment-feed" aria-live="polite">
+              <li class="empty-state">Đang chờ bình luận từ người xem...</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 6. ORANGE CTA BANNER -->
+        <footer class="cta-banner" id="cta-banner">
+          <span class="cta-icon" aria-hidden="true">🔥</span>
+          <span class="cta-text">Bình luận con số đáp án để đua top</span>
+          <span class="cta-icon" aria-hidden="true">🔥</span>
+        </footer>
+
+        <!-- 7. END SCREEN OVERLAY -->
+        <div class="end-screen hidden" id="end-screen" role="dialog" aria-modal="true" aria-labelledby="end-title">
+          <div class="end-card">
+            <div class="end-trophy" aria-hidden="true">🏆</div>
+            <p class="end-kicker">TOÁN HỌC - TÍNH NHANH</p>
+            <h2 class="end-title" id="end-title">Chơi tiếp lần sau nhé!</h2>
+            <p class="end-subtitle">Cảm ơn cả nhà đã tham gia</p>
+            <p class="end-countdown" id="end-countdown"></p>
+
+            <div class="end-podium" id="end-podium"></div>
+
+            <div class="end-stats" id="end-stats">
+              <div class="end-stat">
+                <span class="end-stat-val" id="stat-questions">120</span>
+                <span class="end-stat-lbl">Câu hỏi</span>
+              </div>
+              <div class="end-stat">
+                <span class="end-stat-val" id="stat-players">0</span>
+                <span class="end-stat-lbl">Người ghi điểm</span>
+              </div>
+              <div class="end-stat">
+                <span class="end-stat-val" id="stat-comments">0</span>
+                <span class="end-stat-lbl">Bình luận</span>
+              </div>
+            </div>
+
+            <button type="button" class="end-replay-btn" id="btn-replay">
+              🔄 Chơi lại từ đầu
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Floating Toggle Button when Host Panel is hidden -->
+    <button type="button" class="floating-panel-toggle hidden" id="btn-show-panel" title="Hiện bảng điều khiển Host (Phím H)">
+      ⚙️ Host
+    </button>
+
+    <!-- HOST CONTROL PANEL (Outside 9:16 frame, hidden automatically in OBS ?obs=1) -->
+    <aside class="host-panel" id="host-panel" aria-label="Bảng điều khiển Host">
+      <div class="host-panel-header">
+        <div>
+          <h2 class="host-panel-title">🎛️ Host Controls</h2>
+          <p class="host-panel-sub">Ẩn ngoài khung 1080×1920 khi lên OBS</p>
+        </div>
+        <button type="button" class="btn-icon" id="btn-hide-panel" title="Ẩn bảng điều khiển (Phím H)">✕</button>
+      </div>
+
+      <!-- Playback Controls -->
+      <div class="control-group">
+        <label class="control-label">Điều khiển trận đấu</label>
+        <div class="btn-grid-2">
+          <button type="button" class="ctrl-btn ctrl-primary" id="btn-start-pause">⏸ Tạm dừng</button>
+          <button type="button" class="ctrl-btn ctrl-accent" id="btn-next">⏭ Câu tiếp</button>
+          <button type="button" class="ctrl-btn ctrl-success" id="btn-reveal">💡 Hiện đáp án</button>
+          <button type="button" class="ctrl-btn ctrl-danger" id="btn-reset">🔄 Reset điểm</button>
+        </div>
+      </div>
+
+      <!-- Timer Setting -->
+      <div class="control-group">
+        <div class="control-label-row">
+          <label class="control-label" for="input-duration">Thời gian mỗi câu (giây)</label>
+          <span class="control-value-badge" id="duration-display">45s</span>
+        </div>
+        <div class="duration-presets">
+          <button type="button" class="preset-btn" data-seconds="10">10s</button>
+          <button type="button" class="preset-btn" data-seconds="15">15s</button>
+          <button type="button" class="preset-btn" data-seconds="30">30s</button>
+          <button type="button" class="preset-btn active" data-seconds="45">45s</button>
+          <button type="button" class="preset-btn" data-seconds="60">60s</button>
+        </div>
+        <div class="input-row">
+          <input type="number" id="input-duration" min="5" max="180" value="45" />
+          <button type="button" class="ctrl-btn ctrl-secondary" id="btn-apply-duration">Áp dụng</button>
+        </div>
+      </div>
+
+      <!-- Jump to Question -->
+      <div class="control-group">
+        <div class="control-label-row">
+          <label class="control-label" for="input-jump-question">Chuyển nhanh câu số (1–120)</label>
+          <span class="control-value-badge" id="current-q-display">#1</span>
+        </div>
+        <div class="input-row">
+          <input type="number" id="input-jump-question" min="1" max="120" value="1" />
+          <button type="button" class="ctrl-btn ctrl-secondary" id="btn-jump-question">Đi tới</button>
+        </div>
+      </div>
+
+      <!-- Modes & Toggles -->
+      <div class="control-group">
+        <label class="control-label">Chế độ & Tuỳ chọn</label>
+        <label class="toggle-row">
+          <span>🤖 Chế độ Demo (tự giả lập comment)</span>
+          <input type="checkbox" id="toggle-demo" checked />
+        </label>
+        <label class="toggle-row">
+          <span>⏭ Tự chuyển câu sau khi hiện đáp án</span>
+          <input type="checkbox" id="toggle-auto-next" checked />
+        </label>
+        <label class="toggle-row">
+          <span>🔊 Âm thanh hiệu ứng (Web Audio)</span>
+          <input type="checkbox" id="toggle-sfx" checked />
+        </label>
+        <label class="toggle-row">
+          <span>🎙️ Giọng đọc (BLV/TTS)</span>
+          <input type="checkbox" id="toggle-voice" checked />
+        </label>
+      </div>
+
+      <!-- Real TikTok LIVE WebSocket Connection -->
+      <div class="control-group">
+        <div class="control-label-row">
+          <label class="control-label" for="input-tiktok-user">Kết nối TikTok LIVE thật</label>
+          <span class="ws-badge" id="ws-status">Ably: Chưa nối</span>
+        </div>
+        <div class="input-row">
+          <input type="text" id="input-tiktok-user" placeholder="@1percent.moingay" />
+          <button type="button" class="ctrl-btn ctrl-primary" id="btn-connect-tiktok">Kết nối</button>
+        </div>
+        <p class="control-help">Trang tĩnh kết nối qua Ably — server tự nối TikTok, không cần nhập tay. Nút Kết nối chỉ dùng khi chạy local.</p>
+      </div>
+
+      <!-- Manual Comment Tester -->
+      <div class="control-group">
+        <label class="control-label" for="input-test-comment">Thử bình luận thủ công</label>
+        <div class="input-stack">
+          <input type="text" id="input-test-user" placeholder="Tên người chơi (VD: Minh Anh)" value="Host Test" />
+          <div class="input-row">
+            <input type="text" id="input-test-comment" placeholder="Nhập đáp án thử..." />
+            <button type="button" class="ctrl-btn ctrl-accent" id="btn-send-test">Gửi</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shortcuts -->
+      <div class="shortcuts-box">
+        <strong>Phím tắt:</strong>
+        <span><kbd>Space</kbd> Chạy/Dừng</span>
+        <span><kbd>N</kbd> Câu tiếp</span>
+        <span><kbd>A</kbd> Hiện đáp án</span>
+        <span><kbd>R</kbd> Reset</span>
+        <span><kbd>H</kbd> Ẩn/Hiện Panel</span>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Ably Pub/Sub SDK cho device (CDN) + key SUBSCRIBE-ONLY cho trang tĩnh.
+       Dùng @ably/pubsub-device 3.x: tài khoản Ably MAU pricing từ chối SDK
+       cổ điển `ably` v2 (lỗi 40168). Bundle expose global `AblyPubSub`
+       với API `AblyPubSub.createClient({ key, clientId })`. -->
+  <script src="https://cdn.jsdelivr.net/npm/@ably/pubsub-device@3.2.0/dist/cdn/ably.min.js"></script>
+  <script src="ably-config.js"></script>
+  <!-- Offline fallback dataset synced with questions.json -->
+  <script src="questions-data.js"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
