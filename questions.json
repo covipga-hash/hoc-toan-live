@@ -2,267 +2,15 @@
   {
     "id": 1,
     "direction": "math",
-    "question": "93 + 22 = ?",
-    "keyword": "+",
-    "answer": "115",
-    "acceptedAnswers": [
-      "115"
-    ],
-    "ipa": "",
-    "meaning": "93 + 22 = 115",
-    "example": "chín mươi ba cộng hai mươi hai bằng một trăm mười lăm",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "chín mươi ba cộng hai mươi hai bằng bao nhiêu?"
-  },
-  {
-    "id": 2,
-    "direction": "math",
-    "question": "431 + 78 = ?",
-    "keyword": "+",
-    "answer": "509",
-    "acceptedAnswers": [
-      "509"
-    ],
-    "ipa": "",
-    "meaning": "431 + 78 = 509",
-    "example": "bốn trăm ba mươi mốt cộng bảy mươi tám bằng năm trăm lẻ chín",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "5",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép cộng",
-    "spoken": "bốn trăm ba mươi mốt cộng bảy mươi tám bằng bao nhiêu?"
-  },
-  {
-    "id": 3,
-    "direction": "math",
-    "question": "223 + 474 = ?",
-    "keyword": "+",
-    "answer": "697",
-    "acceptedAnswers": [
-      "697"
-    ],
-    "ipa": "",
-    "meaning": "223 + 474 = 697",
-    "example": "hai trăm hai mươi ba cộng bốn trăm bảy mươi tư bằng sáu trăm chín mươi bảy",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "6",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép cộng",
-    "spoken": "hai trăm hai mươi ba cộng bốn trăm bảy mươi tư bằng bao nhiêu?"
-  },
-  {
-    "id": 4,
-    "direction": "math",
-    "question": "84 + 86 = ?",
-    "keyword": "+",
-    "answer": "170",
-    "acceptedAnswers": [
-      "170"
-    ],
-    "ipa": "",
-    "meaning": "84 + 86 = 170",
-    "example": "tám mươi tư cộng tám mươi sáu bằng một trăm bảy mươi",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "tám mươi tư cộng tám mươi sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 5,
-    "direction": "math",
-    "question": "158 + 32 = ?",
-    "keyword": "+",
-    "answer": "190",
-    "acceptedAnswers": [
-      "190"
-    ],
-    "ipa": "",
-    "meaning": "158 + 32 = 190",
-    "example": "một trăm năm mươi tám cộng ba mươi hai bằng một trăm chín mươi",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "một trăm năm mươi tám cộng ba mươi hai bằng bao nhiêu?"
-  },
-  {
-    "id": 6,
-    "direction": "math",
-    "question": "450 + 323 = ?",
-    "keyword": "+",
-    "answer": "773",
-    "acceptedAnswers": [
-      "773"
-    ],
-    "ipa": "",
-    "meaning": "450 + 323 = 773",
-    "example": "bốn trăm năm mươi cộng ba trăm hai mươi ba bằng bảy trăm bảy mươi ba",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "7",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 7"
-    },
-    "topic": "Phép cộng",
-    "spoken": "bốn trăm năm mươi cộng ba trăm hai mươi ba bằng bao nhiêu?"
-  },
-  {
-    "id": 7,
-    "direction": "math",
-    "question": "80 + 55 = ?",
-    "keyword": "+",
-    "answer": "135",
-    "acceptedAnswers": [
-      "135"
-    ],
-    "ipa": "",
-    "meaning": "80 + 55 = 135",
-    "example": "tám mươi cộng năm mươi lăm bằng một trăm ba mươi lăm",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "tám mươi cộng năm mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 8,
-    "direction": "math",
-    "question": "296 + 69 = ?",
-    "keyword": "+",
-    "answer": "365",
-    "acceptedAnswers": [
-      "365"
-    ],
-    "ipa": "",
-    "meaning": "296 + 69 = 365",
-    "example": "hai trăm chín mươi sáu cộng sáu mươi chín bằng ba trăm sáu mươi lăm",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép cộng",
-    "spoken": "hai trăm chín mươi sáu cộng sáu mươi chín bằng bao nhiêu?"
-  },
-  {
-    "id": 9,
-    "direction": "math",
-    "question": "319 + 292 = ?",
-    "keyword": "+",
-    "answer": "611",
-    "acceptedAnswers": [
-      "611"
-    ],
-    "ipa": "",
-    "meaning": "319 + 292 = 611",
-    "example": "ba trăm mười chín cộng hai trăm chín mươi hai bằng sáu trăm mười một",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "6",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép cộng",
-    "spoken": "ba trăm mười chín cộng hai trăm chín mươi hai bằng bao nhiêu?"
-  },
-  {
-    "id": 10,
-    "direction": "math",
-    "question": "61 + 96 = ?",
-    "keyword": "+",
-    "answer": "157",
-    "acceptedAnswers": [
-      "157"
-    ],
-    "ipa": "",
-    "meaning": "61 + 96 = 157",
-    "example": "sáu mươi mốt cộng chín mươi sáu bằng một trăm năm mươi bảy",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "sáu mươi mốt cộng chín mươi sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 11,
-    "direction": "math",
-    "question": "355 + 37 = ?",
-    "keyword": "+",
-    "answer": "392",
-    "acceptedAnswers": [
-      "392"
-    ],
-    "ipa": "",
-    "meaning": "355 + 37 = 392",
-    "example": "ba trăm năm mươi lăm cộng ba mươi bảy bằng ba trăm chín mươi hai",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép cộng",
-    "spoken": "ba trăm năm mươi lăm cộng ba mươi bảy bằng bao nhiêu?"
-  },
-  {
-    "id": 12,
-    "direction": "math",
-    "question": "350 + 350 = ?",
-    "keyword": "+",
-    "answer": "700",
-    "acceptedAnswers": [
-      "700"
-    ],
-    "ipa": "",
-    "meaning": "350 + 350 = 700",
-    "example": "ba trăm năm mươi cộng ba trăm năm mươi bằng bảy trăm",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "7",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 7"
-    },
-    "topic": "Phép cộng",
-    "spoken": "ba trăm năm mươi cộng ba trăm năm mươi bằng bao nhiêu?"
-  },
-  {
-    "id": 13,
-    "direction": "math",
-    "question": "34 + 39 = ?",
+    "question": "50 + 23 = ?",
     "keyword": "+",
     "answer": "73",
     "acceptedAnswers": [
       "73"
     ],
     "ipa": "",
-    "meaning": "34 + 39 = 73",
-    "example": "ba mươi tư cộng ba mươi chín bằng bảy mươi ba",
+    "meaning": "50 + 23 = 73",
+    "example": "năm mươi cộng hai mươi ba bằng bảy mươi ba",
     "hint": {
       "wordType": "Phép cộng",
       "firstLetter": "7",
@@ -270,62 +18,20 @@
       "text": "Phép cộng • 2 chữ số • Chữ số đầu: 7"
     },
     "topic": "Phép cộng",
-    "spoken": "ba mươi tư cộng ba mươi chín bằng bao nhiêu?"
+    "spoken": "năm mươi cộng hai mươi ba bằng bao nhiêu?"
   },
   {
-    "id": 14,
+    "id": 2,
     "direction": "math",
-    "question": "240 + 32 = ?",
+    "question": "43 + 73 = ?",
     "keyword": "+",
-    "answer": "272",
+    "answer": "116",
     "acceptedAnswers": [
-      "272"
+      "116"
     ],
     "ipa": "",
-    "meaning": "240 + 32 = 272",
-    "example": "hai trăm bốn mươi cộng ba mươi hai bằng hai trăm bảy mươi hai",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép cộng",
-    "spoken": "hai trăm bốn mươi cộng ba mươi hai bằng bao nhiêu?"
-  },
-  {
-    "id": 15,
-    "direction": "math",
-    "question": "544 + 181 = ?",
-    "keyword": "+",
-    "answer": "725",
-    "acceptedAnswers": [
-      "725"
-    ],
-    "ipa": "",
-    "meaning": "544 + 181 = 725",
-    "example": "năm trăm bốn mươi tư cộng một trăm tám mươi mốt bằng bảy trăm hai mươi lăm",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "7",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 7"
-    },
-    "topic": "Phép cộng",
-    "spoken": "năm trăm bốn mươi tư cộng một trăm tám mươi mốt bằng bao nhiêu?"
-  },
-  {
-    "id": 16,
-    "direction": "math",
-    "question": "94 + 82 = ?",
-    "keyword": "+",
-    "answer": "176",
-    "acceptedAnswers": [
-      "176"
-    ],
-    "ipa": "",
-    "meaning": "94 + 82 = 176",
-    "example": "chín mươi tư cộng tám mươi hai bằng một trăm bảy mươi sáu",
+    "meaning": "43 + 73 = 116",
+    "example": "bốn mươi ba cộng bảy mươi ba bằng một trăm mười sáu",
     "hint": {
       "wordType": "Phép cộng",
       "firstLetter": "1",
@@ -333,20 +39,125 @@
       "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép cộng",
-    "spoken": "chín mươi tư cộng tám mươi hai bằng bao nhiêu?"
+    "spoken": "bốn mươi ba cộng bảy mươi ba bằng bao nhiêu?"
   },
   {
-    "id": 17,
+    "id": 3,
     "direction": "math",
-    "question": "175 + 39 = ?",
+    "question": "24 + 87 = ?",
     "keyword": "+",
-    "answer": "214",
+    "answer": "111",
     "acceptedAnswers": [
-      "214"
+      "111"
     ],
     "ipa": "",
-    "meaning": "175 + 39 = 214",
-    "example": "một trăm bảy mươi lăm cộng ba mươi chín bằng hai trăm mười bốn",
+    "meaning": "24 + 87 = 111",
+    "example": "hai mươi tư cộng tám mươi bảy bằng một trăm mười một",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "hai mươi tư cộng tám mươi bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 4,
+    "direction": "math",
+    "question": "77 + 89 = ?",
+    "keyword": "+",
+    "answer": "166",
+    "acceptedAnswers": [
+      "166"
+    ],
+    "ipa": "",
+    "meaning": "77 + 89 = 166",
+    "example": "bảy mươi bảy cộng tám mươi chín bằng một trăm sáu mươi sáu",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bảy mươi bảy cộng tám mươi chín bằng bao nhiêu?"
+  },
+  {
+    "id": 5,
+    "direction": "math",
+    "question": "55 + 53 = ?",
+    "keyword": "+",
+    "answer": "108",
+    "acceptedAnswers": [
+      "108"
+    ],
+    "ipa": "",
+    "meaning": "55 + 53 = 108",
+    "example": "năm mươi lăm cộng năm mươi ba bằng một trăm lẻ tám",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "năm mươi lăm cộng năm mươi ba bằng bao nhiêu?"
+  },
+  {
+    "id": 6,
+    "direction": "math",
+    "question": "90 + 73 = ?",
+    "keyword": "+",
+    "answer": "163",
+    "acceptedAnswers": [
+      "163"
+    ],
+    "ipa": "",
+    "meaning": "90 + 73 = 163",
+    "example": "chín mươi cộng bảy mươi ba bằng một trăm sáu mươi ba",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "chín mươi cộng bảy mươi ba bằng bao nhiêu?"
+  },
+  {
+    "id": 7,
+    "direction": "math",
+    "question": "63 + 72 = ?",
+    "keyword": "+",
+    "answer": "135",
+    "acceptedAnswers": [
+      "135"
+    ],
+    "ipa": "",
+    "meaning": "63 + 72 = 135",
+    "example": "sáu mươi ba cộng bảy mươi hai bằng một trăm ba mươi lăm",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "sáu mươi ba cộng bảy mươi hai bằng bao nhiêu?"
+  },
+  {
+    "id": 8,
+    "direction": "math",
+    "question": "162 + 109 = ?",
+    "keyword": "+",
+    "answer": "271",
+    "acceptedAnswers": [
+      "271"
+    ],
+    "ipa": "",
+    "meaning": "162 + 109 = 271",
+    "example": "một trăm sáu mươi hai cộng một trăm lẻ chín bằng hai trăm bảy mươi mốt",
     "hint": {
       "wordType": "Phép cộng",
       "firstLetter": "2",
@@ -354,41 +165,230 @@
       "text": "Phép cộng • 3 chữ số • Chữ số đầu: 2"
     },
     "topic": "Phép cộng",
-    "spoken": "một trăm bảy mươi lăm cộng ba mươi chín bằng bao nhiêu?"
+    "spoken": "một trăm sáu mươi hai cộng một trăm lẻ chín bằng bao nhiêu?"
+  },
+  {
+    "id": 9,
+    "direction": "math",
+    "question": "74 + 20 = ?",
+    "keyword": "+",
+    "answer": "94",
+    "acceptedAnswers": [
+      "94"
+    ],
+    "ipa": "",
+    "meaning": "74 + 20 = 94",
+    "example": "bảy mươi tư cộng hai mươi bằng chín mươi tư",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "9",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 9"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bảy mươi tư cộng hai mươi bằng bao nhiêu?"
+  },
+  {
+    "id": 10,
+    "direction": "math",
+    "question": "20 + 27 = ?",
+    "keyword": "+",
+    "answer": "47",
+    "acceptedAnswers": [
+      "47"
+    ],
+    "ipa": "",
+    "meaning": "20 + 27 = 47",
+    "example": "hai mươi cộng hai mươi bảy bằng bốn mươi bảy",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "4",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép cộng",
+    "spoken": "hai mươi cộng hai mươi bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 11,
+    "direction": "math",
+    "question": "60 + 98 = ?",
+    "keyword": "+",
+    "answer": "158",
+    "acceptedAnswers": [
+      "158"
+    ],
+    "ipa": "",
+    "meaning": "60 + 98 = 158",
+    "example": "sáu mươi cộng chín mươi tám bằng một trăm năm mươi tám",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "sáu mươi cộng chín mươi tám bằng bao nhiêu?"
+  },
+  {
+    "id": 12,
+    "direction": "math",
+    "question": "48 + 38 = ?",
+    "keyword": "+",
+    "answer": "86",
+    "acceptedAnswers": [
+      "86"
+    ],
+    "ipa": "",
+    "meaning": "48 + 38 = 86",
+    "example": "bốn mươi tám cộng ba mươi tám bằng tám mươi sáu",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "8",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 8"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bốn mươi tám cộng ba mươi tám bằng bao nhiêu?"
+  },
+  {
+    "id": 13,
+    "direction": "math",
+    "question": "96 + 25 = ?",
+    "keyword": "+",
+    "answer": "121",
+    "acceptedAnswers": [
+      "121"
+    ],
+    "ipa": "",
+    "meaning": "96 + 25 = 121",
+    "example": "chín mươi sáu cộng hai mươi lăm bằng một trăm hai mươi mốt",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "chín mươi sáu cộng hai mươi lăm bằng bao nhiêu?"
+  },
+  {
+    "id": 14,
+    "direction": "math",
+    "question": "55 + 25 = ?",
+    "keyword": "+",
+    "answer": "80",
+    "acceptedAnswers": [
+      "80"
+    ],
+    "ipa": "",
+    "meaning": "55 + 25 = 80",
+    "example": "năm mươi lăm cộng hai mươi lăm bằng tám mươi",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "8",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 8"
+    },
+    "topic": "Phép cộng",
+    "spoken": "năm mươi lăm cộng hai mươi lăm bằng bao nhiêu?"
+  },
+  {
+    "id": 15,
+    "direction": "math",
+    "question": "63 + 18 = ?",
+    "keyword": "+",
+    "answer": "81",
+    "acceptedAnswers": [
+      "81"
+    ],
+    "ipa": "",
+    "meaning": "63 + 18 = 81",
+    "example": "sáu mươi ba cộng mười tám bằng tám mươi mốt",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "8",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 8"
+    },
+    "topic": "Phép cộng",
+    "spoken": "sáu mươi ba cộng mười tám bằng bao nhiêu?"
+  },
+  {
+    "id": 16,
+    "direction": "math",
+    "question": "197 + 74 = ?",
+    "keyword": "+",
+    "answer": "271",
+    "acceptedAnswers": [
+      "271"
+    ],
+    "ipa": "",
+    "meaning": "197 + 74 = 271",
+    "example": "một trăm chín mươi bảy cộng bảy mươi tư bằng hai trăm bảy mươi mốt",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "2",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép cộng",
+    "spoken": "một trăm chín mươi bảy cộng bảy mươi tư bằng bao nhiêu?"
+  },
+  {
+    "id": 17,
+    "direction": "math",
+    "question": "62 + 94 = ?",
+    "keyword": "+",
+    "answer": "156",
+    "acceptedAnswers": [
+      "156"
+    ],
+    "ipa": "",
+    "meaning": "62 + 94 = 156",
+    "example": "sáu mươi hai cộng chín mươi tư bằng một trăm năm mươi sáu",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "sáu mươi hai cộng chín mươi tư bằng bao nhiêu?"
   },
   {
     "id": 18,
     "direction": "math",
-    "question": "189 + 363 = ?",
+    "question": "24 + 15 = ?",
     "keyword": "+",
-    "answer": "552",
+    "answer": "39",
     "acceptedAnswers": [
-      "552"
+      "39"
     ],
     "ipa": "",
-    "meaning": "189 + 363 = 552",
-    "example": "một trăm tám mươi chín cộng ba trăm sáu mươi ba bằng năm trăm năm mươi hai",
+    "meaning": "24 + 15 = 39",
+    "example": "hai mươi tư cộng mười lăm bằng ba mươi chín",
     "hint": {
       "wordType": "Phép cộng",
-      "firstLetter": "5",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 5"
+      "firstLetter": "3",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 3"
     },
     "topic": "Phép cộng",
-    "spoken": "một trăm tám mươi chín cộng ba trăm sáu mươi ba bằng bao nhiêu?"
+    "spoken": "hai mươi tư cộng mười lăm bằng bao nhiêu?"
   },
   {
     "id": 19,
     "direction": "math",
-    "question": "25 + 43 = ?",
+    "question": "44 + 20 = ?",
     "keyword": "+",
-    "answer": "68",
+    "answer": "64",
     "acceptedAnswers": [
-      "68"
+      "64"
     ],
     "ipa": "",
-    "meaning": "25 + 43 = 68",
-    "example": "hai mươi lăm cộng bốn mươi ba bằng sáu mươi tám",
+    "meaning": "44 + 20 = 64",
+    "example": "bốn mươi tư cộng hai mươi bằng sáu mươi tư",
     "hint": {
       "wordType": "Phép cộng",
       "firstLetter": "6",
@@ -396,188 +396,20 @@
       "text": "Phép cộng • 2 chữ số • Chữ số đầu: 6"
     },
     "topic": "Phép cộng",
-    "spoken": "hai mươi lăm cộng bốn mươi ba bằng bao nhiêu?"
+    "spoken": "bốn mươi tư cộng hai mươi bằng bao nhiêu?"
   },
   {
     "id": 20,
     "direction": "math",
-    "question": "146 + 35 = ?",
-    "keyword": "+",
-    "answer": "181",
-    "acceptedAnswers": [
-      "181"
-    ],
-    "ipa": "",
-    "meaning": "146 + 35 = 181",
-    "example": "một trăm bốn mươi sáu cộng ba mươi lăm bằng một trăm tám mươi mốt",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "một trăm bốn mươi sáu cộng ba mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 21,
-    "direction": "math",
-    "question": "332 + 64 = ?",
-    "keyword": "+",
-    "answer": "396",
-    "acceptedAnswers": [
-      "396"
-    ],
-    "ipa": "",
-    "meaning": "332 + 64 = 396",
-    "example": "ba trăm ba mươi hai cộng sáu mươi tư bằng ba trăm chín mươi sáu",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép cộng",
-    "spoken": "ba trăm ba mươi hai cộng sáu mươi tư bằng bao nhiêu?"
-  },
-  {
-    "id": 22,
-    "direction": "math",
-    "question": "91 + 13 = ?",
-    "keyword": "+",
-    "answer": "104",
-    "acceptedAnswers": [
-      "104"
-    ],
-    "ipa": "",
-    "meaning": "91 + 13 = 104",
-    "example": "chín mươi mốt cộng mười ba bằng một trăm lẻ bốn",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "chín mươi mốt cộng mười ba bằng bao nhiêu?"
-  },
-  {
-    "id": 23,
-    "direction": "math",
-    "question": "470 + 74 = ?",
-    "keyword": "+",
-    "answer": "544",
-    "acceptedAnswers": [
-      "544"
-    ],
-    "ipa": "",
-    "meaning": "470 + 74 = 544",
-    "example": "bốn trăm bảy mươi cộng bảy mươi tư bằng năm trăm bốn mươi tư",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "5",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép cộng",
-    "spoken": "bốn trăm bảy mươi cộng bảy mươi tư bằng bao nhiêu?"
-  },
-  {
-    "id": 24,
-    "direction": "math",
-    "question": "129 + 822 = ?",
-    "keyword": "+",
-    "answer": "951",
-    "acceptedAnswers": [
-      "951"
-    ],
-    "ipa": "",
-    "meaning": "129 + 822 = 951",
-    "example": "một trăm hai mươi chín cộng tám trăm hai mươi hai bằng chín trăm năm mươi mốt",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "9",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 9"
-    },
-    "topic": "Phép cộng",
-    "spoken": "một trăm hai mươi chín cộng tám trăm hai mươi hai bằng bao nhiêu?"
-  },
-  {
-    "id": 25,
-    "direction": "math",
-    "question": "95 + 62 = ?",
-    "keyword": "+",
-    "answer": "157",
-    "acceptedAnswers": [
-      "157"
-    ],
-    "ipa": "",
-    "meaning": "95 + 62 = 157",
-    "example": "chín mươi lăm cộng sáu mươi hai bằng một trăm năm mươi bảy",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép cộng",
-    "spoken": "chín mươi lăm cộng sáu mươi hai bằng bao nhiêu?"
-  },
-  {
-    "id": 26,
-    "direction": "math",
-    "question": "446 + 45 = ?",
-    "keyword": "+",
-    "answer": "491",
-    "acceptedAnswers": [
-      "491"
-    ],
-    "ipa": "",
-    "meaning": "446 + 45 = 491",
-    "example": "bốn trăm bốn mươi sáu cộng bốn mươi lăm bằng bốn trăm chín mươi mốt",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "4",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép cộng",
-    "spoken": "bốn trăm bốn mươi sáu cộng bốn mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 27,
-    "direction": "math",
-    "question": "161 + 738 = ?",
-    "keyword": "+",
-    "answer": "899",
-    "acceptedAnswers": [
-      "899"
-    ],
-    "ipa": "",
-    "meaning": "161 + 738 = 899",
-    "example": "một trăm sáu mươi mốt cộng bảy trăm ba mươi tám bằng tám trăm chín mươi chín",
-    "hint": {
-      "wordType": "Phép cộng",
-      "firstLetter": "8",
-      "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 8"
-    },
-    "topic": "Phép cộng",
-    "spoken": "một trăm sáu mươi mốt cộng bảy trăm ba mươi tám bằng bao nhiêu?"
-  },
-  {
-    "id": 28,
-    "direction": "math",
-    "question": "83 + 41 = ?",
+    "question": "72 + 52 = ?",
     "keyword": "+",
     "answer": "124",
     "acceptedAnswers": [
       "124"
     ],
     "ipa": "",
-    "meaning": "83 + 41 = 124",
-    "example": "tám mươi ba cộng bốn mươi mốt bằng một trăm hai mươi tư",
+    "meaning": "72 + 52 = 124",
+    "example": "bảy mươi hai cộng năm mươi hai bằng một trăm hai mươi tư",
     "hint": {
       "wordType": "Phép cộng",
       "firstLetter": "1",
@@ -585,62 +417,230 @@
       "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép cộng",
-    "spoken": "tám mươi ba cộng bốn mươi mốt bằng bao nhiêu?"
+    "spoken": "bảy mươi hai cộng năm mươi hai bằng bao nhiêu?"
+  },
+  {
+    "id": 21,
+    "direction": "math",
+    "question": "73 + 57 = ?",
+    "keyword": "+",
+    "answer": "130",
+    "acceptedAnswers": [
+      "130"
+    ],
+    "ipa": "",
+    "meaning": "73 + 57 = 130",
+    "example": "bảy mươi ba cộng năm mươi bảy bằng một trăm ba mươi",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bảy mươi ba cộng năm mươi bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 22,
+    "direction": "math",
+    "question": "49 + 18 = ?",
+    "keyword": "+",
+    "answer": "67",
+    "acceptedAnswers": [
+      "67"
+    ],
+    "ipa": "",
+    "meaning": "49 + 18 = 67",
+    "example": "bốn mươi chín cộng mười tám bằng sáu mươi bảy",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "6",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 6"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bốn mươi chín cộng mười tám bằng bao nhiêu?"
+  },
+  {
+    "id": 23,
+    "direction": "math",
+    "question": "20 + 37 = ?",
+    "keyword": "+",
+    "answer": "57",
+    "acceptedAnswers": [
+      "57"
+    ],
+    "ipa": "",
+    "meaning": "20 + 37 = 57",
+    "example": "hai mươi cộng ba mươi bảy bằng năm mươi bảy",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "5",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép cộng",
+    "spoken": "hai mươi cộng ba mươi bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 24,
+    "direction": "math",
+    "question": "159 + 118 = ?",
+    "keyword": "+",
+    "answer": "277",
+    "acceptedAnswers": [
+      "277"
+    ],
+    "ipa": "",
+    "meaning": "159 + 118 = 277",
+    "example": "một trăm năm mươi chín cộng một trăm mười tám bằng hai trăm bảy mươi bảy",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "2",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép cộng",
+    "spoken": "một trăm năm mươi chín cộng một trăm mười tám bằng bao nhiêu?"
+  },
+  {
+    "id": 25,
+    "direction": "math",
+    "question": "69 + 24 = ?",
+    "keyword": "+",
+    "answer": "93",
+    "acceptedAnswers": [
+      "93"
+    ],
+    "ipa": "",
+    "meaning": "69 + 24 = 93",
+    "example": "sáu mươi chín cộng hai mươi tư bằng chín mươi ba",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "9",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 9"
+    },
+    "topic": "Phép cộng",
+    "spoken": "sáu mươi chín cộng hai mươi tư bằng bao nhiêu?"
+  },
+  {
+    "id": 26,
+    "direction": "math",
+    "question": "58 + 12 = ?",
+    "keyword": "+",
+    "answer": "70",
+    "acceptedAnswers": [
+      "70"
+    ],
+    "ipa": "",
+    "meaning": "58 + 12 = 70",
+    "example": "năm mươi tám cộng mười hai bằng bảy mươi",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "7",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép cộng",
+    "spoken": "năm mươi tám cộng mười hai bằng bao nhiêu?"
+  },
+  {
+    "id": 27,
+    "direction": "math",
+    "question": "76 + 89 = ?",
+    "keyword": "+",
+    "answer": "165",
+    "acceptedAnswers": [
+      "165"
+    ],
+    "ipa": "",
+    "meaning": "76 + 89 = 165",
+    "example": "bảy mươi sáu cộng tám mươi chín bằng một trăm sáu mươi lăm",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bảy mươi sáu cộng tám mươi chín bằng bao nhiêu?"
+  },
+  {
+    "id": 28,
+    "direction": "math",
+    "question": "46 + 29 = ?",
+    "keyword": "+",
+    "answer": "75",
+    "acceptedAnswers": [
+      "75"
+    ],
+    "ipa": "",
+    "meaning": "46 + 29 = 75",
+    "example": "bốn mươi sáu cộng hai mươi chín bằng bảy mươi lăm",
+    "hint": {
+      "wordType": "Phép cộng",
+      "firstLetter": "7",
+      "letterCount": 2,
+      "text": "Phép cộng • 2 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép cộng",
+    "spoken": "bốn mươi sáu cộng hai mươi chín bằng bao nhiêu?"
   },
   {
     "id": 29,
     "direction": "math",
-    "question": "429 + 36 = ?",
+    "question": "34 + 81 = ?",
     "keyword": "+",
-    "answer": "465",
+    "answer": "115",
     "acceptedAnswers": [
-      "465"
+      "115"
     ],
     "ipa": "",
-    "meaning": "429 + 36 = 465",
-    "example": "bốn trăm hai mươi chín cộng ba mươi sáu bằng bốn trăm sáu mươi lăm",
+    "meaning": "34 + 81 = 115",
+    "example": "ba mươi tư cộng tám mươi mốt bằng một trăm mười lăm",
     "hint": {
       "wordType": "Phép cộng",
-      "firstLetter": "4",
+      "firstLetter": "1",
       "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 4"
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép cộng",
-    "spoken": "bốn trăm hai mươi chín cộng ba mươi sáu bằng bao nhiêu?"
+    "spoken": "ba mươi tư cộng tám mươi mốt bằng bao nhiêu?"
   },
   {
     "id": 30,
     "direction": "math",
-    "question": "800 + 152 = ?",
+    "question": "83 + 66 = ?",
     "keyword": "+",
-    "answer": "952",
+    "answer": "149",
     "acceptedAnswers": [
-      "952"
+      "149"
     ],
     "ipa": "",
-    "meaning": "800 + 152 = 952",
-    "example": "tám trăm cộng một trăm năm mươi hai bằng chín trăm năm mươi hai",
+    "meaning": "83 + 66 = 149",
+    "example": "tám mươi ba cộng sáu mươi sáu bằng một trăm bốn mươi chín",
     "hint": {
       "wordType": "Phép cộng",
-      "firstLetter": "9",
+      "firstLetter": "1",
       "letterCount": 3,
-      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 9"
+      "text": "Phép cộng • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép cộng",
-    "spoken": "tám trăm cộng một trăm năm mươi hai bằng bao nhiêu?"
+    "spoken": "tám mươi ba cộng sáu mươi sáu bằng bao nhiêu?"
   },
   {
     "id": 31,
     "direction": "math",
-    "question": "245 - 128 = ?",
+    "question": "145 - 34 = ?",
     "keyword": "-",
-    "answer": "117",
+    "answer": "111",
     "acceptedAnswers": [
-      "117"
+      "111"
     ],
     "ipa": "",
-    "meaning": "245 - 128 = 117",
-    "example": "hai trăm bốn mươi lăm trừ một trăm hai mươi tám bằng một trăm mười bảy",
+    "meaning": "145 - 34 = 111",
+    "example": "một trăm bốn mươi lăm trừ ba mươi tư bằng một trăm mười một",
     "hint": {
       "wordType": "Phép trừ",
       "firstLetter": "1",
@@ -648,503 +648,62 @@
       "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép trừ",
-    "spoken": "hai trăm bốn mươi lăm trừ một trăm hai mươi tám bằng bao nhiêu?"
+    "spoken": "một trăm bốn mươi lăm trừ ba mươi tư bằng bao nhiêu?"
   },
   {
     "id": 32,
     "direction": "math",
-    "question": "481 - 237 = ?",
+    "question": "72 - 52 = ?",
     "keyword": "-",
-    "answer": "244",
+    "answer": "20",
     "acceptedAnswers": [
-      "244"
+      "20"
     ],
     "ipa": "",
-    "meaning": "481 - 237 = 244",
-    "example": "bốn trăm tám mươi mốt trừ hai trăm ba mươi bảy bằng hai trăm bốn mươi tư",
+    "meaning": "72 - 52 = 20",
+    "example": "bảy mươi hai trừ năm mươi hai bằng hai mươi",
     "hint": {
       "wordType": "Phép trừ",
       "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 2"
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 2"
     },
     "topic": "Phép trừ",
-    "spoken": "bốn trăm tám mươi mốt trừ hai trăm ba mươi bảy bằng bao nhiêu?"
+    "spoken": "bảy mươi hai trừ năm mươi hai bằng bao nhiêu?"
   },
   {
     "id": 33,
     "direction": "math",
-    "question": "831 - 115 = ?",
+    "question": "134 - 18 = ?",
     "keyword": "-",
-    "answer": "716",
+    "answer": "116",
     "acceptedAnswers": [
-      "716"
+      "116"
     ],
     "ipa": "",
-    "meaning": "831 - 115 = 716",
-    "example": "tám trăm ba mươi mốt trừ một trăm mười lăm bằng bảy trăm mười sáu",
+    "meaning": "134 - 18 = 116",
+    "example": "một trăm ba mươi tư trừ mười tám bằng một trăm mười sáu",
     "hint": {
       "wordType": "Phép trừ",
-      "firstLetter": "7",
+      "firstLetter": "1",
       "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 7"
+      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép trừ",
-    "spoken": "tám trăm ba mươi mốt trừ một trăm mười lăm bằng bao nhiêu?"
+    "spoken": "một trăm ba mươi tư trừ mười tám bằng bao nhiêu?"
   },
   {
     "id": 34,
     "direction": "math",
-    "question": "290 - 206 = ?",
+    "question": "96 - 53 = ?",
     "keyword": "-",
-    "answer": "84",
+    "answer": "43",
     "acceptedAnswers": [
-      "84"
+      "43"
     ],
     "ipa": "",
-    "meaning": "290 - 206 = 84",
-    "example": "hai trăm chín mươi trừ hai trăm lẻ sáu bằng tám mươi tư",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "8",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 8"
-    },
-    "topic": "Phép trừ",
-    "spoken": "hai trăm chín mươi trừ hai trăm lẻ sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 35,
-    "direction": "math",
-    "question": "514 - 315 = ?",
-    "keyword": "-",
-    "answer": "199",
-    "acceptedAnswers": [
-      "199"
-    ],
-    "ipa": "",
-    "meaning": "514 - 315 = 199",
-    "example": "năm trăm mười bốn trừ ba trăm mười lăm bằng một trăm chín mươi chín",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép trừ",
-    "spoken": "năm trăm mười bốn trừ ba trăm mười lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 36,
-    "direction": "math",
-    "question": "887 - 201 = ?",
-    "keyword": "-",
-    "answer": "686",
-    "acceptedAnswers": [
-      "686"
-    ],
-    "ipa": "",
-    "meaning": "887 - 201 = 686",
-    "example": "tám trăm tám mươi bảy trừ hai trăm lẻ một bằng sáu trăm tám mươi sáu",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "6",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép trừ",
-    "spoken": "tám trăm tám mươi bảy trừ hai trăm lẻ một bằng bao nhiêu?"
-  },
-  {
-    "id": 37,
-    "direction": "math",
-    "question": "103 - 85 = ?",
-    "keyword": "-",
-    "answer": "18",
-    "acceptedAnswers": [
-      "18"
-    ],
-    "ipa": "",
-    "meaning": "103 - 85 = 18",
-    "example": "một trăm lẻ ba trừ tám mươi lăm bằng mười tám",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "1",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép trừ",
-    "spoken": "một trăm lẻ ba trừ tám mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 38,
-    "direction": "math",
-    "question": "519 - 123 = ?",
-    "keyword": "-",
-    "answer": "396",
-    "acceptedAnswers": [
-      "396"
-    ],
-    "ipa": "",
-    "meaning": "519 - 123 = 396",
-    "example": "năm trăm mười chín trừ một trăm hai mươi ba bằng ba trăm chín mươi sáu",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép trừ",
-    "spoken": "năm trăm mười chín trừ một trăm hai mươi ba bằng bao nhiêu?"
-  },
-  {
-    "id": 39,
-    "direction": "math",
-    "question": "911 - 281 = ?",
-    "keyword": "-",
-    "answer": "630",
-    "acceptedAnswers": [
-      "630"
-    ],
-    "ipa": "",
-    "meaning": "911 - 281 = 630",
-    "example": "chín trăm mười một trừ hai trăm tám mươi mốt bằng sáu trăm ba mươi",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "6",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép trừ",
-    "spoken": "chín trăm mười một trừ hai trăm tám mươi mốt bằng bao nhiêu?"
-  },
-  {
-    "id": 40,
-    "direction": "math",
-    "question": "106 - 55 = ?",
-    "keyword": "-",
-    "answer": "51",
-    "acceptedAnswers": [
-      "51"
-    ],
-    "ipa": "",
-    "meaning": "106 - 55 = 51",
-    "example": "một trăm lẻ sáu trừ năm mươi lăm bằng năm mươi mốt",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "5",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép trừ",
-    "spoken": "một trăm lẻ sáu trừ năm mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 41,
-    "direction": "math",
-    "question": "512 - 453 = ?",
-    "keyword": "-",
-    "answer": "59",
-    "acceptedAnswers": [
-      "59"
-    ],
-    "ipa": "",
-    "meaning": "512 - 453 = 59",
-    "example": "năm trăm mười hai trừ bốn trăm năm mươi ba bằng năm mươi chín",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "5",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép trừ",
-    "spoken": "năm trăm mười hai trừ bốn trăm năm mươi ba bằng bao nhiêu?"
-  },
-  {
-    "id": 42,
-    "direction": "math",
-    "question": "903 - 274 = ?",
-    "keyword": "-",
-    "answer": "629",
-    "acceptedAnswers": [
-      "629"
-    ],
-    "ipa": "",
-    "meaning": "903 - 274 = 629",
-    "example": "chín trăm lẻ ba trừ hai trăm bảy mươi tư bằng sáu trăm hai mươi chín",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "6",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép trừ",
-    "spoken": "chín trăm lẻ ba trừ hai trăm bảy mươi tư bằng bao nhiêu?"
-  },
-  {
-    "id": 43,
-    "direction": "math",
-    "question": "208 - 150 = ?",
-    "keyword": "-",
-    "answer": "58",
-    "acceptedAnswers": [
-      "58"
-    ],
-    "ipa": "",
-    "meaning": "208 - 150 = 58",
-    "example": "hai trăm lẻ tám trừ một trăm năm mươi bằng năm mươi tám",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "5",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép trừ",
-    "spoken": "hai trăm lẻ tám trừ một trăm năm mươi bằng bao nhiêu?"
-  },
-  {
-    "id": 44,
-    "direction": "math",
-    "question": "492 - 79 = ?",
-    "keyword": "-",
-    "answer": "413",
-    "acceptedAnswers": [
-      "413"
-    ],
-    "ipa": "",
-    "meaning": "492 - 79 = 413",
-    "example": "bốn trăm chín mươi hai trừ bảy mươi chín bằng bốn trăm mười ba",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "4",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép trừ",
-    "spoken": "bốn trăm chín mươi hai trừ bảy mươi chín bằng bao nhiêu?"
-  },
-  {
-    "id": 45,
-    "direction": "math",
-    "question": "877 - 14 = ?",
-    "keyword": "-",
-    "answer": "863",
-    "acceptedAnswers": [
-      "863"
-    ],
-    "ipa": "",
-    "meaning": "877 - 14 = 863",
-    "example": "tám trăm bảy mươi bảy trừ mười bốn bằng tám trăm sáu mươi ba",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "8",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 8"
-    },
-    "topic": "Phép trừ",
-    "spoken": "tám trăm bảy mươi bảy trừ mười bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 46,
-    "direction": "math",
-    "question": "129 - 50 = ?",
-    "keyword": "-",
-    "answer": "79",
-    "acceptedAnswers": [
-      "79"
-    ],
-    "ipa": "",
-    "meaning": "129 - 50 = 79",
-    "example": "một trăm hai mươi chín trừ năm mươi bằng bảy mươi chín",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "7",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 7"
-    },
-    "topic": "Phép trừ",
-    "spoken": "một trăm hai mươi chín trừ năm mươi bằng bao nhiêu?"
-  },
-  {
-    "id": 47,
-    "direction": "math",
-    "question": "448 - 395 = ?",
-    "keyword": "-",
-    "answer": "53",
-    "acceptedAnswers": [
-      "53"
-    ],
-    "ipa": "",
-    "meaning": "448 - 395 = 53",
-    "example": "bốn trăm bốn mươi tám trừ ba trăm chín mươi lăm bằng năm mươi ba",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "5",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép trừ",
-    "spoken": "bốn trăm bốn mươi tám trừ ba trăm chín mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 48,
-    "direction": "math",
-    "question": "746 - 147 = ?",
-    "keyword": "-",
-    "answer": "599",
-    "acceptedAnswers": [
-      "599"
-    ],
-    "ipa": "",
-    "meaning": "746 - 147 = 599",
-    "example": "bảy trăm bốn mươi sáu trừ một trăm bốn mươi bảy bằng năm trăm chín mươi chín",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "5",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép trừ",
-    "spoken": "bảy trăm bốn mươi sáu trừ một trăm bốn mươi bảy bằng bao nhiêu?"
-  },
-  {
-    "id": 49,
-    "direction": "math",
-    "question": "202 - 66 = ?",
-    "keyword": "-",
-    "answer": "136",
-    "acceptedAnswers": [
-      "136"
-    ],
-    "ipa": "",
-    "meaning": "202 - 66 = 136",
-    "example": "hai trăm lẻ hai trừ sáu mươi sáu bằng một trăm ba mươi sáu",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép trừ",
-    "spoken": "hai trăm lẻ hai trừ sáu mươi sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 50,
-    "direction": "math",
-    "question": "413 - 102 = ?",
-    "keyword": "-",
-    "answer": "311",
-    "acceptedAnswers": [
-      "311"
-    ],
-    "ipa": "",
-    "meaning": "413 - 102 = 311",
-    "example": "bốn trăm mười ba trừ một trăm lẻ hai bằng ba trăm mười một",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép trừ",
-    "spoken": "bốn trăm mười ba trừ một trăm lẻ hai bằng bao nhiêu?"
-  },
-  {
-    "id": 51,
-    "direction": "math",
-    "question": "881 - 414 = ?",
-    "keyword": "-",
-    "answer": "467",
-    "acceptedAnswers": [
-      "467"
-    ],
-    "ipa": "",
-    "meaning": "881 - 414 = 467",
-    "example": "tám trăm tám mươi mốt trừ bốn trăm mười bốn bằng bốn trăm sáu mươi bảy",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "4",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép trừ",
-    "spoken": "tám trăm tám mươi mốt trừ bốn trăm mười bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 52,
-    "direction": "math",
-    "question": "214 - 44 = ?",
-    "keyword": "-",
-    "answer": "170",
-    "acceptedAnswers": [
-      "170"
-    ],
-    "ipa": "",
-    "meaning": "214 - 44 = 170",
-    "example": "hai trăm mười bốn trừ bốn mươi tư bằng một trăm bảy mươi",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép trừ",
-    "spoken": "hai trăm mười bốn trừ bốn mươi tư bằng bao nhiêu?"
-  },
-  {
-    "id": 53,
-    "direction": "math",
-    "question": "320 - 303 = ?",
-    "keyword": "-",
-    "answer": "17",
-    "acceptedAnswers": [
-      "17"
-    ],
-    "ipa": "",
-    "meaning": "320 - 303 = 17",
-    "example": "ba trăm hai mươi trừ ba trăm lẻ ba bằng mười bảy",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "1",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép trừ",
-    "spoken": "ba trăm hai mươi trừ ba trăm lẻ ba bằng bao nhiêu?"
-  },
-  {
-    "id": 54,
-    "direction": "math",
-    "question": "734 - 661 = ?",
-    "keyword": "-",
-    "answer": "73",
-    "acceptedAnswers": [
-      "73"
-    ],
-    "ipa": "",
-    "meaning": "734 - 661 = 73",
-    "example": "bảy trăm ba mươi tư trừ sáu trăm sáu mươi mốt bằng bảy mươi ba",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "7",
-      "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 7"
-    },
-    "topic": "Phép trừ",
-    "spoken": "bảy trăm ba mươi tư trừ sáu trăm sáu mươi mốt bằng bao nhiêu?"
-  },
-  {
-    "id": 55,
-    "direction": "math",
-    "question": "189 - 145 = ?",
-    "keyword": "-",
-    "answer": "44",
-    "acceptedAnswers": [
-      "44"
-    ],
-    "ipa": "",
-    "meaning": "189 - 145 = 44",
-    "example": "một trăm tám mươi chín trừ một trăm bốn mươi lăm bằng bốn mươi tư",
+    "meaning": "96 - 53 = 43",
+    "example": "chín mươi sáu trừ năm mươi ba bằng bốn mươi ba",
     "hint": {
       "wordType": "Phép trừ",
       "firstLetter": "4",
@@ -1152,83 +711,62 @@
       "text": "Phép trừ • 2 chữ số • Chữ số đầu: 4"
     },
     "topic": "Phép trừ",
-    "spoken": "một trăm tám mươi chín trừ một trăm bốn mươi lăm bằng bao nhiêu?"
+    "spoken": "chín mươi sáu trừ năm mươi ba bằng bao nhiêu?"
   },
   {
-    "id": 56,
+    "id": 35,
     "direction": "math",
-    "question": "582 - 250 = ?",
+    "question": "169 - 152 = ?",
     "keyword": "-",
-    "answer": "332",
+    "answer": "17",
     "acceptedAnswers": [
-      "332"
+      "17"
     ],
     "ipa": "",
-    "meaning": "582 - 250 = 332",
-    "example": "năm trăm tám mươi hai trừ hai trăm năm mươi bằng ba trăm ba mươi hai",
+    "meaning": "169 - 152 = 17",
+    "example": "một trăm sáu mươi chín trừ một trăm năm mươi hai bằng mười bảy",
     "hint": {
       "wordType": "Phép trừ",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép trừ",
-    "spoken": "năm trăm tám mươi hai trừ hai trăm năm mươi bằng bao nhiêu?"
-  },
-  {
-    "id": 57,
-    "direction": "math",
-    "question": "931 - 892 = ?",
-    "keyword": "-",
-    "answer": "39",
-    "acceptedAnswers": [
-      "39"
-    ],
-    "ipa": "",
-    "meaning": "931 - 892 = 39",
-    "example": "chín trăm ba mươi mốt trừ tám trăm chín mươi hai bằng ba mươi chín",
-    "hint": {
-      "wordType": "Phép trừ",
-      "firstLetter": "3",
+      "firstLetter": "1",
       "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 3"
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép trừ",
-    "spoken": "chín trăm ba mươi mốt trừ tám trăm chín mươi hai bằng bao nhiêu?"
+    "spoken": "một trăm sáu mươi chín trừ một trăm năm mươi hai bằng bao nhiêu?"
   },
   {
-    "id": 58,
+    "id": 36,
     "direction": "math",
-    "question": "121 - 38 = ?",
+    "question": "83 - 19 = ?",
     "keyword": "-",
-    "answer": "83",
+    "answer": "64",
     "acceptedAnswers": [
-      "83"
+      "64"
     ],
     "ipa": "",
-    "meaning": "121 - 38 = 83",
-    "example": "một trăm hai mươi mốt trừ ba mươi tám bằng tám mươi ba",
+    "meaning": "83 - 19 = 64",
+    "example": "tám mươi ba trừ mười chín bằng sáu mươi tư",
     "hint": {
       "wordType": "Phép trừ",
-      "firstLetter": "8",
+      "firstLetter": "6",
       "letterCount": 2,
-      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 8"
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 6"
     },
     "topic": "Phép trừ",
-    "spoken": "một trăm hai mươi mốt trừ ba mươi tám bằng bao nhiêu?"
+    "spoken": "tám mươi ba trừ mười chín bằng bao nhiêu?"
   },
   {
-    "id": 59,
+    "id": 37,
     "direction": "math",
-    "question": "659 - 484 = ?",
+    "question": "163 - 47 = ?",
     "keyword": "-",
-    "answer": "175",
+    "answer": "116",
     "acceptedAnswers": [
-      "175"
+      "116"
     ],
     "ipa": "",
-    "meaning": "659 - 484 = 175",
-    "example": "sáu trăm năm mươi chín trừ bốn trăm tám mươi tư bằng một trăm bảy mươi lăm",
+    "meaning": "163 - 47 = 116",
+    "example": "một trăm sáu mươi ba trừ bốn mươi bảy bằng một trăm mười sáu",
     "hint": {
       "wordType": "Phép trừ",
       "firstLetter": "1",
@@ -1236,545 +774,608 @@
       "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép trừ",
-    "spoken": "sáu trăm năm mươi chín trừ bốn trăm tám mươi tư bằng bao nhiêu?"
+    "spoken": "một trăm sáu mươi ba trừ bốn mươi bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 38,
+    "direction": "math",
+    "question": "254 - 196 = ?",
+    "keyword": "-",
+    "answer": "58",
+    "acceptedAnswers": [
+      "58"
+    ],
+    "ipa": "",
+    "meaning": "254 - 196 = 58",
+    "example": "hai trăm năm mươi tư trừ một trăm chín mươi sáu bằng năm mươi tám",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "5",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép trừ",
+    "spoken": "hai trăm năm mươi tư trừ một trăm chín mươi sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 39,
+    "direction": "math",
+    "question": "164 - 142 = ?",
+    "keyword": "-",
+    "answer": "22",
+    "acceptedAnswers": [
+      "22"
+    ],
+    "ipa": "",
+    "meaning": "164 - 142 = 22",
+    "example": "một trăm sáu mươi tư trừ một trăm bốn mươi hai bằng hai mươi hai",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "2",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm sáu mươi tư trừ một trăm bốn mươi hai bằng bao nhiêu?"
+  },
+  {
+    "id": 40,
+    "direction": "math",
+    "question": "193 - 134 = ?",
+    "keyword": "-",
+    "answer": "59",
+    "acceptedAnswers": [
+      "59"
+    ],
+    "ipa": "",
+    "meaning": "193 - 134 = 59",
+    "example": "một trăm chín mươi ba trừ một trăm ba mươi tư bằng năm mươi chín",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "5",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm chín mươi ba trừ một trăm ba mươi tư bằng bao nhiêu?"
+  },
+  {
+    "id": 41,
+    "direction": "math",
+    "question": "104 - 36 = ?",
+    "keyword": "-",
+    "answer": "68",
+    "acceptedAnswers": [
+      "68"
+    ],
+    "ipa": "",
+    "meaning": "104 - 36 = 68",
+    "example": "một trăm lẻ bốn trừ ba mươi sáu bằng sáu mươi tám",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "6",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 6"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm lẻ bốn trừ ba mươi sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 42,
+    "direction": "math",
+    "question": "191 - 38 = ?",
+    "keyword": "-",
+    "answer": "153",
+    "acceptedAnswers": [
+      "153"
+    ],
+    "ipa": "",
+    "meaning": "191 - 38 = 153",
+    "example": "một trăm chín mươi mốt trừ ba mươi tám bằng một trăm năm mươi ba",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm chín mươi mốt trừ ba mươi tám bằng bao nhiêu?"
+  },
+  {
+    "id": 43,
+    "direction": "math",
+    "question": "21 - 11 = ?",
+    "keyword": "-",
+    "answer": "10",
+    "acceptedAnswers": [
+      "10"
+    ],
+    "ipa": "",
+    "meaning": "21 - 11 = 10",
+    "example": "hai mươi mốt trừ mười một bằng mười",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "hai mươi mốt trừ mười một bằng bao nhiêu?"
+  },
+  {
+    "id": 44,
+    "direction": "math",
+    "question": "64 - 11 = ?",
+    "keyword": "-",
+    "answer": "53",
+    "acceptedAnswers": [
+      "53"
+    ],
+    "ipa": "",
+    "meaning": "64 - 11 = 53",
+    "example": "sáu mươi tư trừ mười một bằng năm mươi ba",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "5",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép trừ",
+    "spoken": "sáu mươi tư trừ mười một bằng bao nhiêu?"
+  },
+  {
+    "id": 45,
+    "direction": "math",
+    "question": "179 - 131 = ?",
+    "keyword": "-",
+    "answer": "48",
+    "acceptedAnswers": [
+      "48"
+    ],
+    "ipa": "",
+    "meaning": "179 - 131 = 48",
+    "example": "một trăm bảy mươi chín trừ một trăm ba mươi mốt bằng bốn mươi tám",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "4",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm bảy mươi chín trừ một trăm ba mươi mốt bằng bao nhiêu?"
+  },
+  {
+    "id": 46,
+    "direction": "math",
+    "question": "273 - 175 = ?",
+    "keyword": "-",
+    "answer": "98",
+    "acceptedAnswers": [
+      "98"
+    ],
+    "ipa": "",
+    "meaning": "273 - 175 = 98",
+    "example": "hai trăm bảy mươi ba trừ một trăm bảy mươi lăm bằng chín mươi tám",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "9",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 9"
+    },
+    "topic": "Phép trừ",
+    "spoken": "hai trăm bảy mươi ba trừ một trăm bảy mươi lăm bằng bao nhiêu?"
+  },
+  {
+    "id": 47,
+    "direction": "math",
+    "question": "40 - 22 = ?",
+    "keyword": "-",
+    "answer": "18",
+    "acceptedAnswers": [
+      "18"
+    ],
+    "ipa": "",
+    "meaning": "40 - 22 = 18",
+    "example": "bốn mươi trừ hai mươi hai bằng mười tám",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "bốn mươi trừ hai mươi hai bằng bao nhiêu?"
+  },
+  {
+    "id": 48,
+    "direction": "math",
+    "question": "176 - 36 = ?",
+    "keyword": "-",
+    "answer": "140",
+    "acceptedAnswers": [
+      "140"
+    ],
+    "ipa": "",
+    "meaning": "176 - 36 = 140",
+    "example": "một trăm bảy mươi sáu trừ ba mươi sáu bằng một trăm bốn mươi",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm bảy mươi sáu trừ ba mươi sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 49,
+    "direction": "math",
+    "question": "48 - 22 = ?",
+    "keyword": "-",
+    "answer": "26",
+    "acceptedAnswers": [
+      "26"
+    ],
+    "ipa": "",
+    "meaning": "48 - 22 = 26",
+    "example": "bốn mươi tám trừ hai mươi hai bằng hai mươi sáu",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "2",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép trừ",
+    "spoken": "bốn mươi tám trừ hai mươi hai bằng bao nhiêu?"
+  },
+  {
+    "id": 50,
+    "direction": "math",
+    "question": "88 - 74 = ?",
+    "keyword": "-",
+    "answer": "14",
+    "acceptedAnswers": [
+      "14"
+    ],
+    "ipa": "",
+    "meaning": "88 - 74 = 14",
+    "example": "tám mươi tám trừ bảy mươi tư bằng mười bốn",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "tám mươi tám trừ bảy mươi tư bằng bao nhiêu?"
+  },
+  {
+    "id": 51,
+    "direction": "math",
+    "question": "70 - 30 = ?",
+    "keyword": "-",
+    "answer": "40",
+    "acceptedAnswers": [
+      "40"
+    ],
+    "ipa": "",
+    "meaning": "70 - 30 = 40",
+    "example": "bảy mươi trừ ba mươi bằng bốn mươi",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "4",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép trừ",
+    "spoken": "bảy mươi trừ ba mươi bằng bao nhiêu?"
+  },
+  {
+    "id": 52,
+    "direction": "math",
+    "question": "30 - 17 = ?",
+    "keyword": "-",
+    "answer": "13",
+    "acceptedAnswers": [
+      "13"
+    ],
+    "ipa": "",
+    "meaning": "30 - 17 = 13",
+    "example": "ba mươi trừ mười bảy bằng mười ba",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "ba mươi trừ mười bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 53,
+    "direction": "math",
+    "question": "148 - 126 = ?",
+    "keyword": "-",
+    "answer": "22",
+    "acceptedAnswers": [
+      "22"
+    ],
+    "ipa": "",
+    "meaning": "148 - 126 = 22",
+    "example": "một trăm bốn mươi tám trừ một trăm hai mươi sáu bằng hai mươi hai",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "2",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm bốn mươi tám trừ một trăm hai mươi sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 54,
+    "direction": "math",
+    "question": "290 - 185 = ?",
+    "keyword": "-",
+    "answer": "105",
+    "acceptedAnswers": [
+      "105"
+    ],
+    "ipa": "",
+    "meaning": "290 - 185 = 105",
+    "example": "hai trăm chín mươi trừ một trăm tám mươi lăm bằng một trăm lẻ năm",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "hai trăm chín mươi trừ một trăm tám mươi lăm bằng bao nhiêu?"
+  },
+  {
+    "id": 55,
+    "direction": "math",
+    "question": "195 - 86 = ?",
+    "keyword": "-",
+    "answer": "109",
+    "acceptedAnswers": [
+      "109"
+    ],
+    "ipa": "",
+    "meaning": "195 - 86 = 109",
+    "example": "một trăm chín mươi lăm trừ tám mươi sáu bằng một trăm lẻ chín",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 3,
+      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm chín mươi lăm trừ tám mươi sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 56,
+    "direction": "math",
+    "question": "27 - 15 = ?",
+    "keyword": "-",
+    "answer": "12",
+    "acceptedAnswers": [
+      "12"
+    ],
+    "ipa": "",
+    "meaning": "27 - 15 = 12",
+    "example": "hai mươi bảy trừ mười lăm bằng mười hai",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "hai mươi bảy trừ mười lăm bằng bao nhiêu?"
+  },
+  {
+    "id": 57,
+    "direction": "math",
+    "question": "32 - 15 = ?",
+    "keyword": "-",
+    "answer": "17",
+    "acceptedAnswers": [
+      "17"
+    ],
+    "ipa": "",
+    "meaning": "32 - 15 = 17",
+    "example": "ba mươi hai trừ mười lăm bằng mười bảy",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "ba mươi hai trừ mười lăm bằng bao nhiêu?"
+  },
+  {
+    "id": 58,
+    "direction": "math",
+    "question": "165 - 152 = ?",
+    "keyword": "-",
+    "answer": "13",
+    "acceptedAnswers": [
+      "13"
+    ],
+    "ipa": "",
+    "meaning": "165 - 152 = 13",
+    "example": "một trăm sáu mươi lăm trừ một trăm năm mươi hai bằng mười ba",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm sáu mươi lăm trừ một trăm năm mươi hai bằng bao nhiêu?"
+  },
+  {
+    "id": 59,
+    "direction": "math",
+    "question": "177 - 115 = ?",
+    "keyword": "-",
+    "answer": "62",
+    "acceptedAnswers": [
+      "62"
+    ],
+    "ipa": "",
+    "meaning": "177 - 115 = 62",
+    "example": "một trăm bảy mươi bảy trừ một trăm mười lăm bằng sáu mươi hai",
+    "hint": {
+      "wordType": "Phép trừ",
+      "firstLetter": "6",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 6"
+    },
+    "topic": "Phép trừ",
+    "spoken": "một trăm bảy mươi bảy trừ một trăm mười lăm bằng bao nhiêu?"
   },
   {
     "id": 60,
     "direction": "math",
-    "question": "994 - 155 = ?",
+    "question": "57 - 35 = ?",
     "keyword": "-",
-    "answer": "839",
+    "answer": "22",
     "acceptedAnswers": [
-      "839"
+      "22"
     ],
     "ipa": "",
-    "meaning": "994 - 155 = 839",
-    "example": "chín trăm chín mươi tư trừ một trăm năm mươi lăm bằng tám trăm ba mươi chín",
+    "meaning": "57 - 35 = 22",
+    "example": "năm mươi bảy trừ ba mươi lăm bằng hai mươi hai",
     "hint": {
       "wordType": "Phép trừ",
-      "firstLetter": "8",
-      "letterCount": 3,
-      "text": "Phép trừ • 3 chữ số • Chữ số đầu: 8"
+      "firstLetter": "2",
+      "letterCount": 2,
+      "text": "Phép trừ • 2 chữ số • Chữ số đầu: 2"
     },
     "topic": "Phép trừ",
-    "spoken": "chín trăm chín mươi tư trừ một trăm năm mươi lăm bằng bao nhiêu?"
+    "spoken": "năm mươi bảy trừ ba mươi lăm bằng bao nhiêu?"
   },
   {
     "id": 61,
     "direction": "math",
-    "question": "46 × 7 = ?",
+    "question": "8 × 4 = ?",
     "keyword": "×",
-    "answer": "322",
+    "answer": "32",
     "acceptedAnswers": [
-      "322"
+      "32"
     ],
     "ipa": "",
-    "meaning": "46 × 7 = 322",
-    "example": "bốn mươi sáu nhân bảy bằng ba trăm hai mươi hai",
+    "meaning": "8 × 4 = 32",
+    "example": "tám nhân bốn bằng ba mươi hai",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 3"
     },
     "topic": "Phép nhân",
-    "spoken": "bốn mươi sáu nhân bảy bằng bao nhiêu?"
+    "spoken": "tám nhân bốn bằng bao nhiêu?"
   },
   {
     "id": 62,
     "direction": "math",
-    "question": "35 × 8 = ?",
+    "question": "5 × 4 = ?",
     "keyword": "×",
-    "answer": "280",
+    "answer": "20",
     "acceptedAnswers": [
-      "280"
+      "20"
     ],
     "ipa": "",
-    "meaning": "35 × 8 = 280",
-    "example": "ba mươi lăm nhân tám bằng hai trăm tám mươi",
+    "meaning": "5 × 4 = 20",
+    "example": "năm nhân bốn bằng hai mươi",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
     },
     "topic": "Phép nhân",
-    "spoken": "ba mươi lăm nhân tám bằng bao nhiêu?"
+    "spoken": "năm nhân bốn bằng bao nhiêu?"
   },
   {
     "id": 63,
     "direction": "math",
-    "question": "15 × 19 = ?",
+    "question": "5 × 5 = ?",
     "keyword": "×",
-    "answer": "285",
+    "answer": "25",
     "acceptedAnswers": [
-      "285"
+      "25"
     ],
     "ipa": "",
-    "meaning": "15 × 19 = 285",
-    "example": "mười lăm nhân mười chín bằng hai trăm tám mươi lăm",
+    "meaning": "5 × 5 = 25",
+    "example": "năm nhân năm bằng hai mươi lăm",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
     },
     "topic": "Phép nhân",
-    "spoken": "mười lăm nhân mười chín bằng bao nhiêu?"
+    "spoken": "năm nhân năm bằng bao nhiêu?"
   },
   {
     "id": 64,
     "direction": "math",
-    "question": "38 × 9 = ?",
+    "question": "9 × 9 = ?",
     "keyword": "×",
-    "answer": "342",
+    "answer": "81",
     "acceptedAnswers": [
-      "342"
+      "81"
     ],
     "ipa": "",
-    "meaning": "38 × 9 = 342",
-    "example": "ba mươi tám nhân chín bằng ba trăm bốn mươi hai",
+    "meaning": "9 × 9 = 81",
+    "example": "chín nhân chín bằng tám mươi mốt",
     "hint": {
       "wordType": "Phép nhân",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
+      "firstLetter": "8",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 8"
     },
     "topic": "Phép nhân",
-    "spoken": "ba mươi tám nhân chín bằng bao nhiêu?"
+    "spoken": "chín nhân chín bằng bao nhiêu?"
   },
   {
     "id": 65,
     "direction": "math",
-    "question": "13 × 4 = ?",
+    "question": "3 × 4 = ?",
     "keyword": "×",
-    "answer": "52",
+    "answer": "12",
     "acceptedAnswers": [
-      "52"
+      "12"
     ],
     "ipa": "",
-    "meaning": "13 × 4 = 52",
-    "example": "mười ba nhân bốn bằng năm mươi hai",
+    "meaning": "3 × 4 = 12",
+    "example": "ba nhân bốn bằng mười hai",
     "hint": {
       "wordType": "Phép nhân",
-      "firstLetter": "5",
+      "firstLetter": "1",
       "letterCount": 2,
-      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 5"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép nhân",
-    "spoken": "mười ba nhân bốn bằng bao nhiêu?"
+    "spoken": "ba nhân bốn bằng bao nhiêu?"
   },
   {
     "id": 66,
     "direction": "math",
-    "question": "12 × 15 = ?",
+    "question": "9 × 7 = ?",
     "keyword": "×",
-    "answer": "180",
+    "answer": "63",
     "acceptedAnswers": [
-      "180"
+      "63"
     ],
     "ipa": "",
-    "meaning": "12 × 15 = 180",
-    "example": "mười hai nhân mười lăm bằng một trăm tám mươi",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép nhân",
-    "spoken": "mười hai nhân mười lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 67,
-    "direction": "math",
-    "question": "26 × 5 = ?",
-    "keyword": "×",
-    "answer": "130",
-    "acceptedAnswers": [
-      "130"
-    ],
-    "ipa": "",
-    "meaning": "26 × 5 = 130",
-    "example": "hai mươi sáu nhân năm bằng một trăm ba mươi",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi sáu nhân năm bằng bao nhiêu?"
-  },
-  {
-    "id": 68,
-    "direction": "math",
-    "question": "81 × 4 = ?",
-    "keyword": "×",
-    "answer": "324",
-    "acceptedAnswers": [
-      "324"
-    ],
-    "ipa": "",
-    "meaning": "81 × 4 = 324",
-    "example": "tám mươi mốt nhân bốn bằng ba trăm hai mươi tư",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép nhân",
-    "spoken": "tám mươi mốt nhân bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 69,
-    "direction": "math",
-    "question": "20 × 20 = ?",
-    "keyword": "×",
-    "answer": "400",
-    "acceptedAnswers": [
-      "400"
-    ],
-    "ipa": "",
-    "meaning": "20 × 20 = 400",
-    "example": "hai mươi nhân hai mươi bằng bốn trăm",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "4",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi nhân hai mươi bằng bao nhiêu?"
-  },
-  {
-    "id": 70,
-    "direction": "math",
-    "question": "74 × 5 = ?",
-    "keyword": "×",
-    "answer": "370",
-    "acceptedAnswers": [
-      "370"
-    ],
-    "ipa": "",
-    "meaning": "74 × 5 = 370",
-    "example": "bảy mươi tư nhân năm bằng ba trăm bảy mươi",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép nhân",
-    "spoken": "bảy mươi tư nhân năm bằng bao nhiêu?"
-  },
-  {
-    "id": 71,
-    "direction": "math",
-    "question": "38 × 4 = ?",
-    "keyword": "×",
-    "answer": "152",
-    "acceptedAnswers": [
-      "152"
-    ],
-    "ipa": "",
-    "meaning": "38 × 4 = 152",
-    "example": "ba mươi tám nhân bốn bằng một trăm năm mươi hai",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép nhân",
-    "spoken": "ba mươi tám nhân bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 72,
-    "direction": "math",
-    "question": "29 × 16 = ?",
-    "keyword": "×",
-    "answer": "464",
-    "acceptedAnswers": [
-      "464"
-    ],
-    "ipa": "",
-    "meaning": "29 × 16 = 464",
-    "example": "hai mươi chín nhân mười sáu bằng bốn trăm sáu mươi tư",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "4",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi chín nhân mười sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 73,
-    "direction": "math",
-    "question": "85 × 4 = ?",
-    "keyword": "×",
-    "answer": "340",
-    "acceptedAnswers": [
-      "340"
-    ],
-    "ipa": "",
-    "meaning": "85 × 4 = 340",
-    "example": "tám mươi lăm nhân bốn bằng ba trăm bốn mươi",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép nhân",
-    "spoken": "tám mươi lăm nhân bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 74,
-    "direction": "math",
-    "question": "94 × 7 = ?",
-    "keyword": "×",
-    "answer": "658",
-    "acceptedAnswers": [
-      "658"
-    ],
-    "ipa": "",
-    "meaning": "94 × 7 = 658",
-    "example": "chín mươi tư nhân bảy bằng sáu trăm năm mươi tám",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "6",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép nhân",
-    "spoken": "chín mươi tư nhân bảy bằng bao nhiêu?"
-  },
-  {
-    "id": 75,
-    "direction": "math",
-    "question": "12 × 26 = ?",
-    "keyword": "×",
-    "answer": "312",
-    "acceptedAnswers": [
-      "312"
-    ],
-    "ipa": "",
-    "meaning": "12 × 26 = 312",
-    "example": "mười hai nhân hai mươi sáu bằng ba trăm mười hai",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép nhân",
-    "spoken": "mười hai nhân hai mươi sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 76,
-    "direction": "math",
-    "question": "34 × 7 = ?",
-    "keyword": "×",
-    "answer": "238",
-    "acceptedAnswers": [
-      "238"
-    ],
-    "ipa": "",
-    "meaning": "34 × 7 = 238",
-    "example": "ba mươi tư nhân bảy bằng hai trăm ba mươi tám",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép nhân",
-    "spoken": "ba mươi tư nhân bảy bằng bao nhiêu?"
-  },
-  {
-    "id": 77,
-    "direction": "math",
-    "question": "83 × 4 = ?",
-    "keyword": "×",
-    "answer": "332",
-    "acceptedAnswers": [
-      "332"
-    ],
-    "ipa": "",
-    "meaning": "83 × 4 = 332",
-    "example": "tám mươi ba nhân bốn bằng ba trăm ba mươi hai",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép nhân",
-    "spoken": "tám mươi ba nhân bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 78,
-    "direction": "math",
-    "question": "29 × 17 = ?",
-    "keyword": "×",
-    "answer": "493",
-    "acceptedAnswers": [
-      "493"
-    ],
-    "ipa": "",
-    "meaning": "29 × 17 = 493",
-    "example": "hai mươi chín nhân mười bảy bằng bốn trăm chín mươi ba",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "4",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi chín nhân mười bảy bằng bao nhiêu?"
-  },
-  {
-    "id": 79,
-    "direction": "math",
-    "question": "26 × 8 = ?",
-    "keyword": "×",
-    "answer": "208",
-    "acceptedAnswers": [
-      "208"
-    ],
-    "ipa": "",
-    "meaning": "26 × 8 = 208",
-    "example": "hai mươi sáu nhân tám bằng hai trăm lẻ tám",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi sáu nhân tám bằng bao nhiêu?"
-  },
-  {
-    "id": 80,
-    "direction": "math",
-    "question": "65 × 3 = ?",
-    "keyword": "×",
-    "answer": "195",
-    "acceptedAnswers": [
-      "195"
-    ],
-    "ipa": "",
-    "meaning": "65 × 3 = 195",
-    "example": "sáu mươi lăm nhân ba bằng một trăm chín mươi lăm",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép nhân",
-    "spoken": "sáu mươi lăm nhân ba bằng bao nhiêu?"
-  },
-  {
-    "id": 81,
-    "direction": "math",
-    "question": "21 × 24 = ?",
-    "keyword": "×",
-    "answer": "504",
-    "acceptedAnswers": [
-      "504"
-    ],
-    "ipa": "",
-    "meaning": "21 × 24 = 504",
-    "example": "hai mươi mốt nhân hai mươi tư bằng năm trăm lẻ bốn",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "5",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi mốt nhân hai mươi tư bằng bao nhiêu?"
-  },
-  {
-    "id": 82,
-    "direction": "math",
-    "question": "24 × 9 = ?",
-    "keyword": "×",
-    "answer": "216",
-    "acceptedAnswers": [
-      "216"
-    ],
-    "ipa": "",
-    "meaning": "24 × 9 = 216",
-    "example": "hai mươi tư nhân chín bằng hai trăm mười sáu",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi tư nhân chín bằng bao nhiêu?"
-  },
-  {
-    "id": 83,
-    "direction": "math",
-    "question": "14 × 8 = ?",
-    "keyword": "×",
-    "answer": "112",
-    "acceptedAnswers": [
-      "112"
-    ],
-    "ipa": "",
-    "meaning": "14 × 8 = 112",
-    "example": "mười bốn nhân tám bằng một trăm mười hai",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép nhân",
-    "spoken": "mười bốn nhân tám bằng bao nhiêu?"
-  },
-  {
-    "id": 84,
-    "direction": "math",
-    "question": "13 × 21 = ?",
-    "keyword": "×",
-    "answer": "273",
-    "acceptedAnswers": [
-      "273"
-    ],
-    "ipa": "",
-    "meaning": "13 × 21 = 273",
-    "example": "mười ba nhân hai mươi mốt bằng hai trăm bảy mươi ba",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép nhân",
-    "spoken": "mười ba nhân hai mươi mốt bằng bao nhiêu?"
-  },
-  {
-    "id": 85,
-    "direction": "math",
-    "question": "12 × 5 = ?",
-    "keyword": "×",
-    "answer": "60",
-    "acceptedAnswers": [
-      "60"
-    ],
-    "ipa": "",
-    "meaning": "12 × 5 = 60",
-    "example": "mười hai nhân năm bằng sáu mươi",
+    "meaning": "9 × 7 = 63",
+    "example": "chín nhân bảy bằng sáu mươi ba",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "6",
@@ -1782,62 +1383,209 @@
       "text": "Phép nhân • 2 chữ số • Chữ số đầu: 6"
     },
     "topic": "Phép nhân",
-    "spoken": "mười hai nhân năm bằng bao nhiêu?"
+    "spoken": "chín nhân bảy bằng bao nhiêu?"
   },
   {
-    "id": 86,
+    "id": 67,
     "direction": "math",
-    "question": "33 × 7 = ?",
+    "question": "6 × 4 = ?",
     "keyword": "×",
-    "answer": "231",
+    "answer": "24",
     "acceptedAnswers": [
-      "231"
+      "24"
     ],
     "ipa": "",
-    "meaning": "33 × 7 = 231",
-    "example": "ba mươi ba nhân bảy bằng hai trăm ba mươi mốt",
+    "meaning": "6 × 4 = 24",
+    "example": "sáu nhân bốn bằng hai mươi tư",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
     },
     "topic": "Phép nhân",
-    "spoken": "ba mươi ba nhân bảy bằng bao nhiêu?"
+    "spoken": "sáu nhân bốn bằng bao nhiêu?"
   },
   {
-    "id": 87,
+    "id": 68,
     "direction": "math",
-    "question": "19 × 21 = ?",
+    "question": "28 × 2 = ?",
     "keyword": "×",
-    "answer": "399",
+    "answer": "56",
     "acceptedAnswers": [
-      "399"
+      "56"
     ],
     "ipa": "",
-    "meaning": "19 × 21 = 399",
-    "example": "mười chín nhân hai mươi mốt bằng ba trăm chín mươi chín",
+    "meaning": "28 × 2 = 56",
+    "example": "hai mươi tám nhân hai bằng năm mươi sáu",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "5",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép nhân",
+    "spoken": "hai mươi tám nhân hai bằng bao nhiêu?"
+  },
+  {
+    "id": 69,
+    "direction": "math",
+    "question": "4 × 9 = ?",
+    "keyword": "×",
+    "answer": "36",
+    "acceptedAnswers": [
+      "36"
+    ],
+    "ipa": "",
+    "meaning": "4 × 9 = 36",
+    "example": "bốn nhân chín bằng ba mươi sáu",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 3"
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 3"
     },
     "topic": "Phép nhân",
-    "spoken": "mười chín nhân hai mươi mốt bằng bao nhiêu?"
+    "spoken": "bốn nhân chín bằng bao nhiêu?"
   },
   {
-    "id": 88,
+    "id": 70,
     "direction": "math",
-    "question": "57 × 2 = ?",
+    "question": "2 × 4 = ?",
     "keyword": "×",
-    "answer": "114",
+    "answer": "8",
     "acceptedAnswers": [
-      "114"
+      "8"
     ],
     "ipa": "",
-    "meaning": "57 × 2 = 114",
-    "example": "năm mươi bảy nhân hai bằng một trăm mười bốn",
+    "meaning": "2 × 4 = 8",
+    "example": "hai nhân bốn bằng tám",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "8",
+      "letterCount": 1,
+      "text": "Phép nhân • 1 chữ số • Chữ số đầu: 8"
+    },
+    "topic": "Phép nhân",
+    "spoken": "hai nhân bốn bằng bao nhiêu?"
+  },
+  {
+    "id": 71,
+    "direction": "math",
+    "question": "7 × 4 = ?",
+    "keyword": "×",
+    "answer": "28",
+    "acceptedAnswers": [
+      "28"
+    ],
+    "ipa": "",
+    "meaning": "7 × 4 = 28",
+    "example": "bảy nhân bốn bằng hai mươi tám",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "2",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép nhân",
+    "spoken": "bảy nhân bốn bằng bao nhiêu?"
+  },
+  {
+    "id": 72,
+    "direction": "math",
+    "question": "7 × 3 = ?",
+    "keyword": "×",
+    "answer": "21",
+    "acceptedAnswers": [
+      "21"
+    ],
+    "ipa": "",
+    "meaning": "7 × 3 = 21",
+    "example": "bảy nhân ba bằng hai mươi mốt",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "2",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép nhân",
+    "spoken": "bảy nhân ba bằng bao nhiêu?"
+  },
+  {
+    "id": 73,
+    "direction": "math",
+    "question": "8 × 8 = ?",
+    "keyword": "×",
+    "answer": "64",
+    "acceptedAnswers": [
+      "64"
+    ],
+    "ipa": "",
+    "meaning": "8 × 8 = 64",
+    "example": "tám nhân tám bằng sáu mươi tư",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "6",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 6"
+    },
+    "topic": "Phép nhân",
+    "spoken": "tám nhân tám bằng bao nhiêu?"
+  },
+  {
+    "id": 74,
+    "direction": "math",
+    "question": "6 × 3 = ?",
+    "keyword": "×",
+    "answer": "18",
+    "acceptedAnswers": [
+      "18"
+    ],
+    "ipa": "",
+    "meaning": "6 × 3 = 18",
+    "example": "sáu nhân ba bằng mười tám",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép nhân",
+    "spoken": "sáu nhân ba bằng bao nhiêu?"
+  },
+  {
+    "id": 75,
+    "direction": "math",
+    "question": "6 × 8 = ?",
+    "keyword": "×",
+    "answer": "48",
+    "acceptedAnswers": [
+      "48"
+    ],
+    "ipa": "",
+    "meaning": "6 × 8 = 48",
+    "example": "sáu nhân tám bằng bốn mươi tám",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "4",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép nhân",
+    "spoken": "sáu nhân tám bằng bao nhiêu?"
+  },
+  {
+    "id": 76,
+    "direction": "math",
+    "question": "27 × 4 = ?",
+    "keyword": "×",
+    "answer": "108",
+    "acceptedAnswers": [
+      "108"
+    ],
+    "ipa": "",
+    "meaning": "27 × 4 = 108",
+    "example": "hai mươi bảy nhân bốn bằng một trăm lẻ tám",
     "hint": {
       "wordType": "Phép nhân",
       "firstLetter": "1",
@@ -1845,566 +1593,461 @@
       "text": "Phép nhân • 3 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép nhân",
-    "spoken": "năm mươi bảy nhân hai bằng bao nhiêu?"
+    "spoken": "hai mươi bảy nhân bốn bằng bao nhiêu?"
   },
   {
-    "id": 89,
+    "id": 77,
     "direction": "math",
-    "question": "48 × 6 = ?",
+    "question": "3 × 9 = ?",
     "keyword": "×",
-    "answer": "288",
-    "acceptedAnswers": [
-      "288"
-    ],
-    "ipa": "",
-    "meaning": "48 × 6 = 288",
-    "example": "bốn mươi tám nhân sáu bằng hai trăm tám mươi tám",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép nhân",
-    "spoken": "bốn mươi tám nhân sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 90,
-    "direction": "math",
-    "question": "21 × 25 = ?",
-    "keyword": "×",
-    "answer": "525",
-    "acceptedAnswers": [
-      "525"
-    ],
-    "ipa": "",
-    "meaning": "21 × 25 = 525",
-    "example": "hai mươi mốt nhân hai mươi lăm bằng năm trăm hai mươi lăm",
-    "hint": {
-      "wordType": "Phép nhân",
-      "firstLetter": "5",
-      "letterCount": 3,
-      "text": "Phép nhân • 3 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép nhân",
-    "spoken": "hai mươi mốt nhân hai mươi lăm bằng bao nhiêu?"
-  },
-  {
-    "id": 91,
-    "direction": "math",
-    "question": "58 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "29",
-    "acceptedAnswers": [
-      "29"
-    ],
-    "ipa": "",
-    "meaning": "58 ÷ 2 = 29",
-    "example": "năm mươi tám chia hai bằng hai mươi chín",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "2",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép chia",
-    "spoken": "năm mươi tám chia hai bằng bao nhiêu?"
-  },
-  {
-    "id": 92,
-    "direction": "math",
-    "question": "315 ÷ 3 = ?",
-    "keyword": "÷",
-    "answer": "105",
-    "acceptedAnswers": [
-      "105"
-    ],
-    "ipa": "",
-    "meaning": "315 ÷ 3 = 105",
-    "example": "ba trăm mười lăm chia ba bằng một trăm lẻ năm",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép chia",
-    "spoken": "ba trăm mười lăm chia ba bằng bao nhiêu?"
-  },
-  {
-    "id": 93,
-    "direction": "math",
-    "question": "108 ÷ 4 = ?",
-    "keyword": "÷",
     "answer": "27",
     "acceptedAnswers": [
       "27"
     ],
     "ipa": "",
-    "meaning": "108 ÷ 4 = 27",
-    "example": "một trăm lẻ tám chia bốn bằng hai mươi bảy",
+    "meaning": "3 × 9 = 27",
+    "example": "ba nhân chín bằng hai mươi bảy",
     "hint": {
-      "wordType": "Phép chia",
+      "wordType": "Phép nhân",
       "firstLetter": "2",
       "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 2"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
     },
-    "topic": "Phép chia",
-    "spoken": "một trăm lẻ tám chia bốn bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "ba nhân chín bằng bao nhiêu?"
   },
   {
-    "id": 94,
+    "id": 78,
     "direction": "math",
-    "question": "902 ÷ 11 = ?",
-    "keyword": "÷",
-    "answer": "82",
+    "question": "4 × 4 = ?",
+    "keyword": "×",
+    "answer": "16",
     "acceptedAnswers": [
-      "82"
+      "16"
     ],
     "ipa": "",
-    "meaning": "902 ÷ 11 = 82",
-    "example": "chín trăm lẻ hai chia mười một bằng tám mươi hai",
+    "meaning": "4 × 4 = 16",
+    "example": "bốn nhân bốn bằng mười sáu",
     "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "8",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 8"
-    },
-    "topic": "Phép chia",
-    "spoken": "chín trăm lẻ hai chia mười một bằng bao nhiêu?"
-  },
-  {
-    "id": 95,
-    "direction": "math",
-    "question": "753 ÷ 3 = ?",
-    "keyword": "÷",
-    "answer": "251",
-    "acceptedAnswers": [
-      "251"
-    ],
-    "ipa": "",
-    "meaning": "753 ÷ 3 = 251",
-    "example": "bảy trăm năm mươi ba chia ba bằng hai trăm năm mươi mốt",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép chia",
-    "spoken": "bảy trăm năm mươi ba chia ba bằng bao nhiêu?"
-  },
-  {
-    "id": 96,
-    "direction": "math",
-    "question": "408 ÷ 6 = ?",
-    "keyword": "÷",
-    "answer": "68",
-    "acceptedAnswers": [
-      "68"
-    ],
-    "ipa": "",
-    "meaning": "408 ÷ 6 = 68",
-    "example": "bốn trăm lẻ tám chia sáu bằng sáu mươi tám",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "6",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 6"
-    },
-    "topic": "Phép chia",
-    "spoken": "bốn trăm lẻ tám chia sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 97,
-    "direction": "math",
-    "question": "240 ÷ 5 = ?",
-    "keyword": "÷",
-    "answer": "48",
-    "acceptedAnswers": [
-      "48"
-    ],
-    "ipa": "",
-    "meaning": "240 ÷ 5 = 48",
-    "example": "hai trăm bốn mươi chia năm bằng bốn mươi tám",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "4",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 4"
-    },
-    "topic": "Phép chia",
-    "spoken": "hai trăm bốn mươi chia năm bằng bao nhiêu?"
-  },
-  {
-    "id": 98,
-    "direction": "math",
-    "question": "764 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "382",
-    "acceptedAnswers": [
-      "382"
-    ],
-    "ipa": "",
-    "meaning": "764 ÷ 2 = 382",
-    "example": "bảy trăm sáu mươi tư chia hai bằng ba trăm tám mươi hai",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép chia",
-    "spoken": "bảy trăm sáu mươi tư chia hai bằng bao nhiêu?"
-  },
-  {
-    "id": 99,
-    "direction": "math",
-    "question": "80 ÷ 4 = ?",
-    "keyword": "÷",
-    "answer": "20",
-    "acceptedAnswers": [
-      "20"
-    ],
-    "ipa": "",
-    "meaning": "80 ÷ 4 = 20",
-    "example": "tám mươi chia bốn bằng hai mươi",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "2",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép chia",
-    "spoken": "tám mươi chia bốn bằng bao nhiêu?"
-  },
-  {
-    "id": 100,
-    "direction": "math",
-    "question": "480 ÷ 6 = ?",
-    "keyword": "÷",
-    "answer": "80",
-    "acceptedAnswers": [
-      "80"
-    ],
-    "ipa": "",
-    "meaning": "480 ÷ 6 = 80",
-    "example": "bốn trăm tám mươi chia sáu bằng tám mươi",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "8",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 8"
-    },
-    "topic": "Phép chia",
-    "spoken": "bốn trăm tám mươi chia sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 101,
-    "direction": "math",
-    "question": "411 ÷ 3 = ?",
-    "keyword": "÷",
-    "answer": "137",
-    "acceptedAnswers": [
-      "137"
-    ],
-    "ipa": "",
-    "meaning": "411 ÷ 3 = 137",
-    "example": "bốn trăm mười một chia ba bằng một trăm ba mươi bảy",
-    "hint": {
-      "wordType": "Phép chia",
+      "wordType": "Phép nhân",
       "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép chia",
-    "spoken": "bốn trăm mười một chia ba bằng bao nhiêu?"
-  },
-  {
-    "id": 102,
-    "direction": "math",
-    "question": "264 ÷ 4 = ?",
-    "keyword": "÷",
-    "answer": "66",
-    "acceptedAnswers": [
-      "66"
-    ],
-    "ipa": "",
-    "meaning": "264 ÷ 4 = 66",
-    "example": "hai trăm sáu mươi tư chia bốn bằng sáu mươi sáu",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "6",
       "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 6"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 1"
     },
-    "topic": "Phép chia",
-    "spoken": "hai trăm sáu mươi tư chia bốn bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "bốn nhân bốn bằng bao nhiêu?"
   },
   {
-    "id": 103,
+    "id": 79,
     "direction": "math",
-    "question": "188 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "94",
+    "question": "5 × 7 = ?",
+    "keyword": "×",
+    "answer": "35",
     "acceptedAnswers": [
-      "94"
+      "35"
     ],
     "ipa": "",
-    "meaning": "188 ÷ 2 = 94",
-    "example": "một trăm tám mươi tám chia hai bằng chín mươi tư",
+    "meaning": "5 × 7 = 35",
+    "example": "năm nhân bảy bằng ba mươi lăm",
     "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "9",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 9"
-    },
-    "topic": "Phép chia",
-    "spoken": "một trăm tám mươi tám chia hai bằng bao nhiêu?"
-  },
-  {
-    "id": 104,
-    "direction": "math",
-    "question": "498 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "249",
-    "acceptedAnswers": [
-      "249"
-    ],
-    "ipa": "",
-    "meaning": "498 ÷ 2 = 249",
-    "example": "bốn trăm chín mươi tám chia hai bằng hai trăm bốn mươi chín",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 2"
-    },
-    "topic": "Phép chia",
-    "spoken": "bốn trăm chín mươi tám chia hai bằng bao nhiêu?"
-  },
-  {
-    "id": 105,
-    "direction": "math",
-    "question": "570 ÷ 6 = ?",
-    "keyword": "÷",
-    "answer": "95",
-    "acceptedAnswers": [
-      "95"
-    ],
-    "ipa": "",
-    "meaning": "570 ÷ 6 = 95",
-    "example": "năm trăm bảy mươi chia sáu bằng chín mươi lăm",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "9",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 9"
-    },
-    "topic": "Phép chia",
-    "spoken": "năm trăm bảy mươi chia sáu bằng bao nhiêu?"
-  },
-  {
-    "id": 106,
-    "direction": "math",
-    "question": "581 ÷ 7 = ?",
-    "keyword": "÷",
-    "answer": "83",
-    "acceptedAnswers": [
-      "83"
-    ],
-    "ipa": "",
-    "meaning": "581 ÷ 7 = 83",
-    "example": "năm trăm tám mươi mốt chia bảy bằng tám mươi ba",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "8",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 8"
-    },
-    "topic": "Phép chia",
-    "spoken": "năm trăm tám mươi mốt chia bảy bằng bao nhiêu?"
-  },
-  {
-    "id": 107,
-    "direction": "math",
-    "question": "720 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "360",
-    "acceptedAnswers": [
-      "360"
-    ],
-    "ipa": "",
-    "meaning": "720 ÷ 2 = 360",
-    "example": "bảy trăm hai mươi chia hai bằng ba trăm sáu mươi",
-    "hint": {
-      "wordType": "Phép chia",
+      "wordType": "Phép nhân",
       "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 3"
-    },
-    "topic": "Phép chia",
-    "spoken": "bảy trăm hai mươi chia hai bằng bao nhiêu?"
-  },
-  {
-    "id": 108,
-    "direction": "math",
-    "question": "132 ÷ 6 = ?",
-    "keyword": "÷",
-    "answer": "22",
-    "acceptedAnswers": [
-      "22"
-    ],
-    "ipa": "",
-    "meaning": "132 ÷ 6 = 22",
-    "example": "một trăm ba mươi hai chia sáu bằng hai mươi hai",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "2",
       "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 2"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 3"
     },
-    "topic": "Phép chia",
-    "spoken": "một trăm ba mươi hai chia sáu bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "năm nhân bảy bằng bao nhiêu?"
   },
   {
-    "id": 109,
+    "id": 80,
     "direction": "math",
-    "question": "114 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "57",
+    "question": "9 × 8 = ?",
+    "keyword": "×",
+    "answer": "72",
     "acceptedAnswers": [
-      "57"
+      "72"
     ],
     "ipa": "",
-    "meaning": "114 ÷ 2 = 57",
-    "example": "một trăm mười bốn chia hai bằng năm mươi bảy",
+    "meaning": "9 × 8 = 72",
+    "example": "chín nhân tám bằng bảy mươi hai",
     "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "5",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 5"
-    },
-    "topic": "Phép chia",
-    "spoken": "một trăm mười bốn chia hai bằng bao nhiêu?"
-  },
-  {
-    "id": 110,
-    "direction": "math",
-    "question": "435 ÷ 3 = ?",
-    "keyword": "÷",
-    "answer": "145",
-    "acceptedAnswers": [
-      "145"
-    ],
-    "ipa": "",
-    "meaning": "435 ÷ 3 = 145",
-    "example": "bốn trăm ba mươi lăm chia ba bằng một trăm bốn mươi lăm",
-    "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 1"
-    },
-    "topic": "Phép chia",
-    "spoken": "bốn trăm ba mươi lăm chia ba bằng bao nhiêu?"
-  },
-  {
-    "id": 111,
-    "direction": "math",
-    "question": "616 ÷ 8 = ?",
-    "keyword": "÷",
-    "answer": "77",
-    "acceptedAnswers": [
-      "77"
-    ],
-    "ipa": "",
-    "meaning": "616 ÷ 8 = 77",
-    "example": "sáu trăm mười sáu chia tám bằng bảy mươi bảy",
-    "hint": {
-      "wordType": "Phép chia",
+      "wordType": "Phép nhân",
       "firstLetter": "7",
       "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 7"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 7"
     },
-    "topic": "Phép chia",
-    "spoken": "sáu trăm mười sáu chia tám bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "chín nhân tám bằng bao nhiêu?"
   },
   {
-    "id": 112,
+    "id": 81,
     "direction": "math",
-    "question": "207 ÷ 3 = ?",
-    "keyword": "÷",
-    "answer": "69",
+    "question": "5 × 8 = ?",
+    "keyword": "×",
+    "answer": "40",
     "acceptedAnswers": [
-      "69"
+      "40"
     ],
     "ipa": "",
-    "meaning": "207 ÷ 3 = 69",
-    "example": "hai trăm lẻ bảy chia ba bằng sáu mươi chín",
+    "meaning": "5 × 8 = 40",
+    "example": "năm nhân tám bằng bốn mươi",
     "hint": {
-      "wordType": "Phép chia",
-      "firstLetter": "6",
+      "wordType": "Phép nhân",
+      "firstLetter": "4",
       "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 6"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 4"
     },
-    "topic": "Phép chia",
-    "spoken": "hai trăm lẻ bảy chia ba bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "năm nhân tám bằng bao nhiêu?"
   },
   {
-    "id": 113,
+    "id": 82,
     "direction": "math",
-    "question": "748 ÷ 2 = ?",
-    "keyword": "÷",
-    "answer": "374",
+    "question": "6 × 6 = ?",
+    "keyword": "×",
+    "answer": "36",
     "acceptedAnswers": [
-      "374"
+      "36"
     ],
     "ipa": "",
-    "meaning": "748 ÷ 2 = 374",
-    "example": "bảy trăm bốn mươi tám chia hai bằng ba trăm bảy mươi tư",
+    "meaning": "6 × 6 = 36",
+    "example": "sáu nhân sáu bằng ba mươi sáu",
     "hint": {
-      "wordType": "Phép chia",
+      "wordType": "Phép nhân",
       "firstLetter": "3",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 3"
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 3"
     },
-    "topic": "Phép chia",
-    "spoken": "bảy trăm bốn mươi tám chia hai bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "sáu nhân sáu bằng bao nhiêu?"
   },
   {
-    "id": 114,
+    "id": 83,
     "direction": "math",
-    "question": "192 ÷ 8 = ?",
-    "keyword": "÷",
+    "question": "8 × 3 = ?",
+    "keyword": "×",
     "answer": "24",
     "acceptedAnswers": [
       "24"
     ],
     "ipa": "",
-    "meaning": "192 ÷ 8 = 24",
-    "example": "một trăm chín mươi hai chia tám bằng hai mươi tư",
+    "meaning": "8 × 3 = 24",
+    "example": "tám nhân ba bằng hai mươi tư",
     "hint": {
-      "wordType": "Phép chia",
+      "wordType": "Phép nhân",
       "firstLetter": "2",
       "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 2"
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 2"
     },
-    "topic": "Phép chia",
-    "spoken": "một trăm chín mươi hai chia tám bằng bao nhiêu?"
+    "topic": "Phép nhân",
+    "spoken": "tám nhân ba bằng bao nhiêu?"
   },
   {
-    "id": 115,
+    "id": 84,
     "direction": "math",
-    "question": "30 ÷ 2 = ?",
-    "keyword": "÷",
+    "question": "23 × 3 = ?",
+    "keyword": "×",
+    "answer": "69",
+    "acceptedAnswers": [
+      "69"
+    ],
+    "ipa": "",
+    "meaning": "23 × 3 = 69",
+    "example": "hai mươi ba nhân ba bằng sáu mươi chín",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "6",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 6"
+    },
+    "topic": "Phép nhân",
+    "spoken": "hai mươi ba nhân ba bằng bao nhiêu?"
+  },
+  {
+    "id": 85,
+    "direction": "math",
+    "question": "5 × 3 = ?",
+    "keyword": "×",
     "answer": "15",
     "acceptedAnswers": [
       "15"
     ],
     "ipa": "",
-    "meaning": "30 ÷ 2 = 15",
-    "example": "ba mươi chia hai bằng mười lăm",
+    "meaning": "5 × 3 = 15",
+    "example": "năm nhân ba bằng mười lăm",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép nhân",
+    "spoken": "năm nhân ba bằng bao nhiêu?"
+  },
+  {
+    "id": 86,
+    "direction": "math",
+    "question": "2 × 3 = ?",
+    "keyword": "×",
+    "answer": "6",
+    "acceptedAnswers": [
+      "6"
+    ],
+    "ipa": "",
+    "meaning": "2 × 3 = 6",
+    "example": "hai nhân ba bằng sáu",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "6",
+      "letterCount": 1,
+      "text": "Phép nhân • 1 chữ số • Chữ số đầu: 6"
+    },
+    "topic": "Phép nhân",
+    "spoken": "hai nhân ba bằng bao nhiêu?"
+  },
+  {
+    "id": 87,
+    "direction": "math",
+    "question": "2 × 2 = ?",
+    "keyword": "×",
+    "answer": "4",
+    "acceptedAnswers": [
+      "4"
+    ],
+    "ipa": "",
+    "meaning": "2 × 2 = 4",
+    "example": "hai nhân hai bằng bốn",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "4",
+      "letterCount": 1,
+      "text": "Phép nhân • 1 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép nhân",
+    "spoken": "hai nhân hai bằng bao nhiêu?"
+  },
+  {
+    "id": 88,
+    "direction": "math",
+    "question": "5 × 2 = ?",
+    "keyword": "×",
+    "answer": "10",
+    "acceptedAnswers": [
+      "10"
+    ],
+    "ipa": "",
+    "meaning": "5 × 2 = 10",
+    "example": "năm nhân hai bằng mười",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép nhân",
+    "spoken": "năm nhân hai bằng bao nhiêu?"
+  },
+  {
+    "id": 89,
+    "direction": "math",
+    "question": "9 × 2 = ?",
+    "keyword": "×",
+    "answer": "18",
+    "acceptedAnswers": [
+      "18"
+    ],
+    "ipa": "",
+    "meaning": "9 × 2 = 18",
+    "example": "chín nhân hai bằng mười tám",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "1",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 1"
+    },
+    "topic": "Phép nhân",
+    "spoken": "chín nhân hai bằng bao nhiêu?"
+  },
+  {
+    "id": 90,
+    "direction": "math",
+    "question": "5 × 9 = ?",
+    "keyword": "×",
+    "answer": "45",
+    "acceptedAnswers": [
+      "45"
+    ],
+    "ipa": "",
+    "meaning": "5 × 9 = 45",
+    "example": "năm nhân chín bằng bốn mươi lăm",
+    "hint": {
+      "wordType": "Phép nhân",
+      "firstLetter": "4",
+      "letterCount": 2,
+      "text": "Phép nhân • 2 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép nhân",
+    "spoken": "năm nhân chín bằng bao nhiêu?"
+  },
+  {
+    "id": 91,
+    "direction": "math",
+    "question": "9 ÷ 3 = ?",
+    "keyword": "÷",
+    "answer": "3",
+    "acceptedAnswers": [
+      "3"
+    ],
+    "ipa": "",
+    "meaning": "9 ÷ 3 = 3",
+    "example": "chín chia ba bằng ba",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "3",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 3"
+    },
+    "topic": "Phép chia",
+    "spoken": "chín chia ba bằng bao nhiêu?"
+  },
+  {
+    "id": 92,
+    "direction": "math",
+    "question": "6 ÷ 3 = ?",
+    "keyword": "÷",
+    "answer": "2",
+    "acceptedAnswers": [
+      "2"
+    ],
+    "ipa": "",
+    "meaning": "6 ÷ 3 = 2",
+    "example": "sáu chia ba bằng hai",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "2",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép chia",
+    "spoken": "sáu chia ba bằng bao nhiêu?"
+  },
+  {
+    "id": 93,
+    "direction": "math",
+    "question": "16 ÷ 8 = ?",
+    "keyword": "÷",
+    "answer": "2",
+    "acceptedAnswers": [
+      "2"
+    ],
+    "ipa": "",
+    "meaning": "16 ÷ 8 = 2",
+    "example": "mười sáu chia tám bằng hai",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "2",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười sáu chia tám bằng bao nhiêu?"
+  },
+  {
+    "id": 94,
+    "direction": "math",
+    "question": "42 ÷ 6 = ?",
+    "keyword": "÷",
+    "answer": "7",
+    "acceptedAnswers": [
+      "7"
+    ],
+    "ipa": "",
+    "meaning": "42 ÷ 6 = 7",
+    "example": "bốn mươi hai chia sáu bằng bảy",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "7",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép chia",
+    "spoken": "bốn mươi hai chia sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 95,
+    "direction": "math",
+    "question": "20 ÷ 4 = ?",
+    "keyword": "÷",
+    "answer": "5",
+    "acceptedAnswers": [
+      "5"
+    ],
+    "ipa": "",
+    "meaning": "20 ÷ 4 = 5",
+    "example": "hai mươi chia bốn bằng năm",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "5",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép chia",
+    "spoken": "hai mươi chia bốn bằng bao nhiêu?"
+  },
+  {
+    "id": 96,
+    "direction": "math",
+    "question": "81 ÷ 9 = ?",
+    "keyword": "÷",
+    "answer": "9",
+    "acceptedAnswers": [
+      "9"
+    ],
+    "ipa": "",
+    "meaning": "81 ÷ 9 = 9",
+    "example": "tám mươi mốt chia chín bằng chín",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "9",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 9"
+    },
+    "topic": "Phép chia",
+    "spoken": "tám mươi mốt chia chín bằng bao nhiêu?"
+  },
+  {
+    "id": 97,
+    "direction": "math",
+    "question": "45 ÷ 9 = ?",
+    "keyword": "÷",
+    "answer": "5",
+    "acceptedAnswers": [
+      "5"
+    ],
+    "ipa": "",
+    "meaning": "45 ÷ 9 = 5",
+    "example": "bốn mươi lăm chia chín bằng năm",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "5",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép chia",
+    "spoken": "bốn mươi lăm chia chín bằng bao nhiêu?"
+  },
+  {
+    "id": 98,
+    "direction": "math",
+    "question": "85 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "17",
+    "acceptedAnswers": [
+      "17"
+    ],
+    "ipa": "",
+    "meaning": "85 ÷ 5 = 17",
+    "example": "tám mươi lăm chia năm bằng mười bảy",
     "hint": {
       "wordType": "Phép chia",
       "firstLetter": "1",
@@ -2412,111 +2055,468 @@
       "text": "Phép chia • 2 chữ số • Chữ số đầu: 1"
     },
     "topic": "Phép chia",
-    "spoken": "ba mươi chia hai bằng bao nhiêu?"
+    "spoken": "tám mươi lăm chia năm bằng bao nhiêu?"
+  },
+  {
+    "id": 99,
+    "direction": "math",
+    "question": "18 ÷ 9 = ?",
+    "keyword": "÷",
+    "answer": "2",
+    "acceptedAnswers": [
+      "2"
+    ],
+    "ipa": "",
+    "meaning": "18 ÷ 9 = 2",
+    "example": "mười tám chia chín bằng hai",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "2",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười tám chia chín bằng bao nhiêu?"
+  },
+  {
+    "id": 100,
+    "direction": "math",
+    "question": "63 ÷ 9 = ?",
+    "keyword": "÷",
+    "answer": "7",
+    "acceptedAnswers": [
+      "7"
+    ],
+    "ipa": "",
+    "meaning": "63 ÷ 9 = 7",
+    "example": "sáu mươi ba chia chín bằng bảy",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "7",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép chia",
+    "spoken": "sáu mươi ba chia chín bằng bao nhiêu?"
+  },
+  {
+    "id": 101,
+    "direction": "math",
+    "question": "28 ÷ 7 = ?",
+    "keyword": "÷",
+    "answer": "4",
+    "acceptedAnswers": [
+      "4"
+    ],
+    "ipa": "",
+    "meaning": "28 ÷ 7 = 4",
+    "example": "hai mươi tám chia bảy bằng bốn",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "4",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép chia",
+    "spoken": "hai mươi tám chia bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 102,
+    "direction": "math",
+    "question": "14 ÷ 2 = ?",
+    "keyword": "÷",
+    "answer": "7",
+    "acceptedAnswers": [
+      "7"
+    ],
+    "ipa": "",
+    "meaning": "14 ÷ 2 = 7",
+    "example": "mười bốn chia hai bằng bảy",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "7",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười bốn chia hai bằng bao nhiêu?"
+  },
+  {
+    "id": 103,
+    "direction": "math",
+    "question": "49 ÷ 7 = ?",
+    "keyword": "÷",
+    "answer": "7",
+    "acceptedAnswers": [
+      "7"
+    ],
+    "ipa": "",
+    "meaning": "49 ÷ 7 = 7",
+    "example": "bốn mươi chín chia bảy bằng bảy",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "7",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép chia",
+    "spoken": "bốn mươi chín chia bảy bằng bao nhiêu?"
+  },
+  {
+    "id": 104,
+    "direction": "math",
+    "question": "25 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "5",
+    "acceptedAnswers": [
+      "5"
+    ],
+    "ipa": "",
+    "meaning": "25 ÷ 5 = 5",
+    "example": "hai mươi lăm chia năm bằng năm",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "5",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 5"
+    },
+    "topic": "Phép chia",
+    "spoken": "hai mươi lăm chia năm bằng bao nhiêu?"
+  },
+  {
+    "id": 105,
+    "direction": "math",
+    "question": "12 ÷ 3 = ?",
+    "keyword": "÷",
+    "answer": "4",
+    "acceptedAnswers": [
+      "4"
+    ],
+    "ipa": "",
+    "meaning": "12 ÷ 3 = 4",
+    "example": "mười hai chia ba bằng bốn",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "4",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười hai chia ba bằng bao nhiêu?"
+  },
+  {
+    "id": 106,
+    "direction": "math",
+    "question": "160 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "32",
+    "acceptedAnswers": [
+      "32"
+    ],
+    "ipa": "",
+    "meaning": "160 ÷ 5 = 32",
+    "example": "một trăm sáu mươi chia năm bằng ba mươi hai",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "3",
+      "letterCount": 2,
+      "text": "Phép chia • 2 chữ số • Chữ số đầu: 3"
+    },
+    "topic": "Phép chia",
+    "spoken": "một trăm sáu mươi chia năm bằng bao nhiêu?"
+  },
+  {
+    "id": 107,
+    "direction": "math",
+    "question": "40 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "8",
+    "acceptedAnswers": [
+      "8"
+    ],
+    "ipa": "",
+    "meaning": "40 ÷ 5 = 8",
+    "example": "bốn mươi chia năm bằng tám",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "8",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 8"
+    },
+    "topic": "Phép chia",
+    "spoken": "bốn mươi chia năm bằng bao nhiêu?"
+  },
+  {
+    "id": 108,
+    "direction": "math",
+    "question": "12 ÷ 6 = ?",
+    "keyword": "÷",
+    "answer": "2",
+    "acceptedAnswers": [
+      "2"
+    ],
+    "ipa": "",
+    "meaning": "12 ÷ 6 = 2",
+    "example": "mười hai chia sáu bằng hai",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "2",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 2"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười hai chia sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 109,
+    "direction": "math",
+    "question": "45 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "9",
+    "acceptedAnswers": [
+      "9"
+    ],
+    "ipa": "",
+    "meaning": "45 ÷ 5 = 9",
+    "example": "bốn mươi lăm chia năm bằng chín",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "9",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 9"
+    },
+    "topic": "Phép chia",
+    "spoken": "bốn mươi lăm chia năm bằng bao nhiêu?"
+  },
+  {
+    "id": 110,
+    "direction": "math",
+    "question": "35 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "7",
+    "acceptedAnswers": [
+      "7"
+    ],
+    "ipa": "",
+    "meaning": "35 ÷ 5 = 7",
+    "example": "ba mươi lăm chia năm bằng bảy",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "7",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 7"
+    },
+    "topic": "Phép chia",
+    "spoken": "ba mươi lăm chia năm bằng bao nhiêu?"
+  },
+  {
+    "id": 111,
+    "direction": "math",
+    "question": "36 ÷ 9 = ?",
+    "keyword": "÷",
+    "answer": "4",
+    "acceptedAnswers": [
+      "4"
+    ],
+    "ipa": "",
+    "meaning": "36 ÷ 9 = 4",
+    "example": "ba mươi sáu chia chín bằng bốn",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "4",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 4"
+    },
+    "topic": "Phép chia",
+    "spoken": "ba mươi sáu chia chín bằng bao nhiêu?"
+  },
+  {
+    "id": 112,
+    "direction": "math",
+    "question": "18 ÷ 2 = ?",
+    "keyword": "÷",
+    "answer": "9",
+    "acceptedAnswers": [
+      "9"
+    ],
+    "ipa": "",
+    "meaning": "18 ÷ 2 = 9",
+    "example": "mười tám chia hai bằng chín",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "9",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 9"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười tám chia hai bằng bao nhiêu?"
+  },
+  {
+    "id": 113,
+    "direction": "math",
+    "question": "72 ÷ 9 = ?",
+    "keyword": "÷",
+    "answer": "8",
+    "acceptedAnswers": [
+      "8"
+    ],
+    "ipa": "",
+    "meaning": "72 ÷ 9 = 8",
+    "example": "bảy mươi hai chia chín bằng tám",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "8",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 8"
+    },
+    "topic": "Phép chia",
+    "spoken": "bảy mươi hai chia chín bằng bao nhiêu?"
+  },
+  {
+    "id": 114,
+    "direction": "math",
+    "question": "192 ÷ 6 = ?",
+    "keyword": "÷",
+    "answer": "32",
+    "acceptedAnswers": [
+      "32"
+    ],
+    "ipa": "",
+    "meaning": "192 ÷ 6 = 32",
+    "example": "một trăm chín mươi hai chia sáu bằng ba mươi hai",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "3",
+      "letterCount": 2,
+      "text": "Phép chia • 2 chữ số • Chữ số đầu: 3"
+    },
+    "topic": "Phép chia",
+    "spoken": "một trăm chín mươi hai chia sáu bằng bao nhiêu?"
+  },
+  {
+    "id": 115,
+    "direction": "math",
+    "question": "15 ÷ 5 = ?",
+    "keyword": "÷",
+    "answer": "3",
+    "acceptedAnswers": [
+      "3"
+    ],
+    "ipa": "",
+    "meaning": "15 ÷ 5 = 3",
+    "example": "mười lăm chia năm bằng ba",
+    "hint": {
+      "wordType": "Phép chia",
+      "firstLetter": "3",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 3"
+    },
+    "topic": "Phép chia",
+    "spoken": "mười lăm chia năm bằng bao nhiêu?"
   },
   {
     "id": 116,
     "direction": "math",
-    "question": "573 ÷ 3 = ?",
+    "question": "16 ÷ 2 = ?",
     "keyword": "÷",
-    "answer": "191",
+    "answer": "8",
     "acceptedAnswers": [
-      "191"
+      "8"
     ],
     "ipa": "",
-    "meaning": "573 ÷ 3 = 191",
-    "example": "năm trăm bảy mươi ba chia ba bằng một trăm chín mươi mốt",
+    "meaning": "16 ÷ 2 = 8",
+    "example": "mười sáu chia hai bằng tám",
     "hint": {
       "wordType": "Phép chia",
-      "firstLetter": "1",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 1"
+      "firstLetter": "8",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 8"
     },
     "topic": "Phép chia",
-    "spoken": "năm trăm bảy mươi ba chia ba bằng bao nhiêu?"
+    "spoken": "mười sáu chia hai bằng bao nhiêu?"
   },
   {
     "id": 117,
     "direction": "math",
-    "question": "287 ÷ 7 = ?",
+    "question": "24 ÷ 8 = ?",
     "keyword": "÷",
-    "answer": "41",
+    "answer": "3",
     "acceptedAnswers": [
-      "41"
+      "3"
     ],
     "ipa": "",
-    "meaning": "287 ÷ 7 = 41",
-    "example": "hai trăm tám mươi bảy chia bảy bằng bốn mươi mốt",
+    "meaning": "24 ÷ 8 = 3",
+    "example": "hai mươi tư chia tám bằng ba",
     "hint": {
       "wordType": "Phép chia",
-      "firstLetter": "4",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 4"
+      "firstLetter": "3",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 3"
     },
     "topic": "Phép chia",
-    "spoken": "hai trăm tám mươi bảy chia bảy bằng bao nhiêu?"
+    "spoken": "hai mươi tư chia tám bằng bao nhiêu?"
   },
   {
     "id": 118,
     "direction": "math",
-    "question": "486 ÷ 9 = ?",
+    "question": "21 ÷ 7 = ?",
     "keyword": "÷",
-    "answer": "54",
+    "answer": "3",
     "acceptedAnswers": [
-      "54"
+      "3"
     ],
     "ipa": "",
-    "meaning": "486 ÷ 9 = 54",
-    "example": "bốn trăm tám mươi sáu chia chín bằng năm mươi tư",
+    "meaning": "21 ÷ 7 = 3",
+    "example": "hai mươi mốt chia bảy bằng ba",
     "hint": {
       "wordType": "Phép chia",
-      "firstLetter": "5",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 5"
+      "firstLetter": "3",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 3"
     },
     "topic": "Phép chia",
-    "spoken": "bốn trăm tám mươi sáu chia chín bằng bao nhiêu?"
+    "spoken": "hai mươi mốt chia bảy bằng bao nhiêu?"
   },
   {
     "id": 119,
     "direction": "math",
-    "question": "488 ÷ 2 = ?",
+    "question": "16 ÷ 4 = ?",
     "keyword": "÷",
-    "answer": "244",
+    "answer": "4",
     "acceptedAnswers": [
-      "244"
+      "4"
     ],
     "ipa": "",
-    "meaning": "488 ÷ 2 = 244",
-    "example": "bốn trăm tám mươi tám chia hai bằng hai trăm bốn mươi tư",
+    "meaning": "16 ÷ 4 = 4",
+    "example": "mười sáu chia bốn bằng bốn",
     "hint": {
       "wordType": "Phép chia",
-      "firstLetter": "2",
-      "letterCount": 3,
-      "text": "Phép chia • 3 chữ số • Chữ số đầu: 2"
+      "firstLetter": "4",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 4"
     },
     "topic": "Phép chia",
-    "spoken": "bốn trăm tám mươi tám chia hai bằng bao nhiêu?"
+    "spoken": "mười sáu chia bốn bằng bao nhiêu?"
   },
   {
     "id": 120,
     "direction": "math",
-    "question": "246 ÷ 6 = ?",
+    "question": "54 ÷ 9 = ?",
     "keyword": "÷",
-    "answer": "41",
+    "answer": "6",
     "acceptedAnswers": [
-      "41"
+      "6"
     ],
     "ipa": "",
-    "meaning": "246 ÷ 6 = 41",
-    "example": "hai trăm bốn mươi sáu chia sáu bằng bốn mươi mốt",
+    "meaning": "54 ÷ 9 = 6",
+    "example": "năm mươi tư chia chín bằng sáu",
     "hint": {
       "wordType": "Phép chia",
-      "firstLetter": "4",
-      "letterCount": 2,
-      "text": "Phép chia • 2 chữ số • Chữ số đầu: 4"
+      "firstLetter": "6",
+      "letterCount": 1,
+      "text": "Phép chia • 1 chữ số • Chữ số đầu: 6"
     },
     "topic": "Phép chia",
-    "spoken": "hai trăm bốn mươi sáu chia sáu bằng bao nhiêu?"
+    "spoken": "năm mươi tư chia chín bằng bao nhiêu?"
   }
 ]
