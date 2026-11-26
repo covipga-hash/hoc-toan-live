@@ -446,20 +446,29 @@
     }, 7000);
   }
 
-  function voiceOnCorrect(name, prevLeaderName, wasFirstPoint, points = 1) {
+  function voiceOnCorrect(name, prevLeaderName, wasFirstPoint, points = 1, guessNum = null) {
     // Chỉ chúc mừng khi giọng đang rảnh — KHÔNG cắt ngang câu hỏi đang đọc.
     // Vòng 10s không đủ chỗ cho nhiều câu chúc mừng cắt nhau (đó là tiếng
     // "lặp lại rồi nhảy loạn xạ" Cơ nghe thấy): trước đây mỗi người đoán đúng
     // (hạng 1–2) đều cắt ngang bằng speechSynthesis.cancel() rồi đọc chúc mừng
     // + thêm 1 câu dẫn đầu nữa. Giờ chỉ 1 câu chúc mừng, nói khi rảnh thì thôi;
     // toast + bảng điểm vẫn báo ngay cho mọi người đoán đúng.
-    speak(`Chúc mừng ${name} đã đoán đúng, cộng ${points} điểm!`, false);
+    // Học Toán (Cơ 26/11): đọc to cả con số đáp án người đó vừa gõ.
+    if (guessNum != null) {
+      speak(`Chúc mừng ${name} đã đoán đúng, đáp án ${numToVi(guessNum)}, cộng ${points} điểm!`, false);
+    } else {
+      speak(`Chúc mừng ${name} đã đoán đúng, cộng ${points} điểm!`, false);
+    }
   }
 
   // Continuous commenter interaction: greet first-time commenters, cheer on
   // repeat commenters with no points yet, and call out anyone 1 point away
   // from the Top 3. Throttled: at most 1 cheer per person per 30s.
-  function voiceOnComment(user, awarded) {
+  // Học Toán (Cơ 26/11): MC đọc to đáp án số người xem vừa gõ.
+  // Chống loạn tiếng: chỉ đọc khi giọng đang rảnh — speak() đã chặn
+  // 1 câu thường/8s + không đè câu đang đọc + không đọc khi vòng còn ≤4s —
+  // và mỗi người tối đa 1 lần đọc/30s.
+  function voiceOnComment(user, awarded, guessNum = null) {
     if (awarded || state.phase !== 'playing') return;
     const key = String(user || '').toLowerCase();
     if (!key) return;
@@ -467,6 +476,13 @@
     e.count += 1;
     e.name = user;
     state.commenters.set(key, e);
+    if (guessNum != null) {
+      const now = Date.now();
+      if (now - (e.lastGuessRead || 0) >= 30000) {
+        if (speak(`${user} đoán ${numToVi(guessNum)}`, false)) e.lastGuessRead = now;
+      }
+      return;
+    }
     if (!state.greetedUsers.has(key)) {
       state.greetedUsers.add(key);
       speak(`Chào ${user}, lần đầu bình luận. Thử đoán câu này đi!`, false);
@@ -603,6 +619,15 @@
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/đ/g, 'd')
       .replace(/Đ/g, 'D');
+  }
+
+  // Học Toán: trích con số đáp án đầu tiên trong bình luận (0..999).
+  // Trả về null khi không có số, hoặc số >999 (không thể là đáp án).
+  function extractGuessNumber(text) {
+    const groups = String(text || '').match(/\d+/g) || [];
+    if (groups.length === 0) return null;
+    const n = Number(groups[0]);
+    return Number.isFinite(n) && n >= 0 && n <= 999 ? n : null;
   }
 
   // Học Toán: đáp án là con số. Bình luận đúng khi chứa nhóm chữ số
@@ -978,6 +1003,9 @@
 
     state.totalComments += 1;
 
+    // Học Toán: con số đáp án trong bình luận (để MC đọc to).
+    const guessNum = extractGuessNumber(cleanText);
+
     const currentQ = state.questions[state.currentIndex];
     let awarded = false;
     let awardedPoints = 0;
@@ -1026,7 +1054,7 @@
       renderLeaderboard(cleanUser);
       // Voice the big moments only (1st +3, 2nd +2); later +1 scorers get
       // toast + leaderboard to keep the audio clean in a 10s round.
-      if (rank <= 2) voiceOnCorrect(cleanUser, prevLeaderName, wasFirstPoint, points);
+      if (rank <= 2) voiceOnCorrect(cleanUser, prevLeaderName, wasFirstPoint, points, guessNum);
 
       els.roundStatusPill.textContent = 'ĐÃ CÓ NGƯỜI ĐÚNG!';
       els.roundStatusPill.className = 'round-status-pill has-winner';
@@ -1040,7 +1068,7 @@
     }
 
     appendCommentToFeed(cleanUser, cleanText, awarded, awardedPoints);
-    voiceOnComment(cleanUser, awarded);
+    voiceOnComment(cleanUser, awarded, guessNum);
   }
 
   // -----------------------------
